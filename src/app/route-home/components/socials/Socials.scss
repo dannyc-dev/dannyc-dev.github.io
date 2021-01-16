@@ -1,0 +1,109 @@
+.socials-container {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+ul {
+    display: flex;
+    // justify-content: flex-end;
+    padding-inline-start: 0px;
+    width: 100%;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+ul li {
+    list-style: none;
+    width: 30px;
+}
+
+ul li a {
+    height: 100%;
+    min-height: 25px;
+    background-color: #fff;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+}
+
+ul li a .icon {
+    position: relative;
+    padding: 2px;
+    padding-top: 4px;
+    color: #fff;
+    transition: .5s;
+    z-index: 3;
+    height: 17px;
+}
+
+ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+a:hover .icon path{
+    fill: #fff
+}
+
+a .twitter {
+    fill:  #55acee;
+}
+
+a .linkedin {
+    fill: #0077b5;
+}
+
+a .twitch {
+    fill: #6441a5;
+}
+
+a:hover .twitter{
+    padding-top: 5px !important;
+    height: 16px !important;
+}
+
+a:hover .linkedin{
+    padding-top: 5px !important;
+    height: 15px !important;
+}
+
+a:hover .twitch {
+    padding-top: 5px !important;
+    height: 15px !important;
+}
+
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+
+ul li a:hover:before {
+    top: 0;
+}
+
+ul li:nth-child(1) a:before{
+    background: #55acee;
+}
+
+ul li:nth-child(2) a:before {
+    background: #0077b5;
+}
+
+ul li:nth-child(3) a:before {
+    background: #0c0c0b;
+}
+
+ul li:nth-child(4) a:before{
+    background: #6441a5;
+}
