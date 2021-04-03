@@ -4,8 +4,7 @@ import './Logo.scss';
 function Logo(props) {
     const [hovered, setHovered] = useState(false);
     const toggleHover = () => {
-        console.log("here");
-        // setHovered(!hovered)
+    
     };
 
     useEffect(() => {

@@ -1,8 +1,8 @@
 import React from 'react'; 
-import { ReactComponent as TwitterIcon} from '../../../../assets/twitter.svg';
-import { ReactComponent as GithubIcon} from '../../../../assets/github.svg';
-import { ReactComponent as LinkedinIcon} from '../../../../assets/linkedin.svg';
-import { ReactComponent as TwitchIcon} from '../../../../assets/twitch.svg';
+import { ReactComponent as TwitterIcon} from '../../../assets/twitter.svg';
+import { ReactComponent as GithubIcon} from '../../../assets/github.svg';
+import { ReactComponent as LinkedinIcon} from '../../../assets/linkedin.svg';
+import { ReactComponent as TwitchIcon} from '../../../assets/twitch.svg';
 import "./Socials.scss";
 
 function Socials() {

@@ -1,13 +1,18 @@
-import React from 'react'; 
+import React from 'react';
 import Logo from '../core/logo/Logo';
 import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
-import Feed from './components/feed/Feed';
-import './Home.scss';
+import RustPy from './rustpy/RustPy';
+import './Blog.scss';
 
-function Home() {
+let MAP ={
+    'RustPy': RustPy
+}
+
+function Blog(props) {
+    let Target = MAP[props.blog];
     return (
-        <div className='home-page'>
+        <div className='blog-page'>
             <div className="mobile-header">
                 <Logo />
                 <Socials />
@@ -17,9 +22,9 @@ function Home() {
                 <Socials />
                 <TwitterFeed/>
             </div>
-            <Feed />
+            <Target />
         </div>
     )
 }
 
-export default Home;
+export default Blog;

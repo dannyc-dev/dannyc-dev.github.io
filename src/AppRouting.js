@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch, withRouter, Redirect } from "react-router-dom";
 import Home from "./app/route-home/Home";
 import About from "./app/route-about/About";
+import Blog from "./app/route-blogs/Blog";
 import NotFound from "./app/core/notfound/NotFound";
 
 function AppRouting(props) {
@@ -11,7 +12,8 @@ function AppRouting(props) {
                 <Redirect to="/" />
             </Route>
             <Route exact path="/" render={() => <Home />}/>
-            <Route eact path="/about" render={() => <About />}/>
+            <Route exact path="/about" render={() => <About />}/>
+            <Route exact path="/rustpy" render={() => <Blog blog='RustPy' />}/>
             <Route component={NotFound} status={404}/>
         </Switch> 
     )
