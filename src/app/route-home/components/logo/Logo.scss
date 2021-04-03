@@ -1,9 +1,67 @@
 .logo-container {
     display: block;
+    font-family: 'Baloo Tammudu 2', cursive;
     box-sizing: border-box;
+    font-size: 60px;
     width: 100%;
     margin: auto;
     height: 100px;
-    border: 1px solid black;
-    padding: 20px;
 }
+
+#period {
+    display: inline-block;
+}
+
+#logo-letter {
+    // -webkit-transition: -webkit-transform .65s;
+    // -moz-transition: -moz-transform .65s;
+    // transition: transform .65s;
+    animation-name: wiggleWiggle;
+    animation-iteration-count: 1;
+    animation-duration: .40s;
+    cursor: pointer;
+    display: inline-block;
+    // transform: translateY(3px);
+}
+
+#logo-letter:hover {
+    // -moz-transform: rotateY(180deg);
+    // -webkit-transform: rotateY(-180deg);
+    transform: rotateY(180deg);
+}
+
+.d {
+    // animation-delay: 0s;
+}
+.a {
+    animation-delay: 0.04s;
+}
+.n {
+    animation-delay: 0.08s;
+}
+.n_2 {
+    animation-delay: 0.12s;
+}
+.y {
+    animation-delay: 0.16s;
+}
+.c {
+    animation-delay: 0.2s;
+}
+
+@keyframes wiggleWiggle {
+    0%, 10% { 
+        transform: rotateY(0deg); 
+    }
+    25% {
+        transform: rotateY(45deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    90%, 100% {
+        transform: rotateY(360deg);
+    }
+}
+
+  

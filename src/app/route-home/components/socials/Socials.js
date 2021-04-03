@@ -10,16 +10,16 @@ function Socials() {
         <div className="socials-container">
             <ul>
                 <li>
-                    <a href="https://twitter.com/dev_danny_">{<TwitterIcon className="icon twitter"/>}</a>
+                    <a href="https://twitter.com/danny_devv" target="_blank" rel="noreferrer">{<TwitterIcon className="icon twitter"/>}</a>
                 </li>
                 <li>
-                    <a href="#">{<LinkedinIcon className="icon linkedin"/>}</a>
+                    <a href="https://www.linkedin.com/in/danny-colmenares/" target="_blank" rel="noreferrer">{<LinkedinIcon className="icon linkedin"/>}</a>
                 </li>
                 <li>
-                    <a href="https://github.com/Danny-devv">{<GithubIcon className="icon"/>}</a>
+                    <a href="https://github.com/danny-devv" target="_blank" rel="noreferrer">{<GithubIcon className="icon"/>}</a>
                 </li>
                 <li>
-                    <a href="https://www.twitch.tv/dev_danny_">{<TwitchIcon className="icon twitch"/>}</a>
+                    <a href="https://www.twitch.tv/dev_danny_" target="_blank" rel="noreferrer">{<TwitchIcon className="icon twitch"/>}</a>
                 </li>
             </ul>
         </div>
