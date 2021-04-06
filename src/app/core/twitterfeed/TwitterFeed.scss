@@ -1,9 +1,11 @@
 .twitterContainer {
     padding-top: 15px;
+    overflow: scroll;
+    height: calc(100% - 120px);
 }
 .twitter-embed {
     overflow: scroll;
-    height: 625px;
+    height: auto;
     #twitter-widget-0{
         min-width: auto !important;
     }
