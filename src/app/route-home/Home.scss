@@ -25,16 +25,19 @@
 }
 
 @media screen and (max-width: 480px) {
-    .highlight {
-        display: none;
-    }
-    .feed {
-        width: 100%;
-        float: none;
-    }
-    .mobile-header {
-        display: block !important;
-        text-align: right;
-        width: 100%;
+    .home-page {
+        .highlight {
+            display: none;
+        }
+        .feed {
+            width: 100%;
+            float: none;
+        }
+        .mobile-header {
+            display: block !important;
+            text-align: right;
+            width: 100%;
+            position: sticky;
+        }
     }
 }
