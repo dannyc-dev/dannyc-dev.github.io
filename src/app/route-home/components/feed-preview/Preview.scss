@@ -1,0 +1,29 @@
+.preview-container {
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    min-height: 175px;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: 500;
+    overflow: auto;
+    .preview-container-left {
+        position: relative;
+        float: left;
+        width: 70%;
+        .preview-title {
+            font-size: 30px;
+        }
+    }
+    .preview-container-right {
+        position: relative;
+        float: right;
+        width: 30%;
+        img {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+}

@@ -6,13 +6,11 @@ import './Feed.scss';
 function Feed() {
     // API Call
     const feed = () => {
-        console.log(PREVIEW_FEED);
-        for (let blog in PREVIEW_FEED) {
-            let desc = PREVIEW_FEED[blog];
+        return PREVIEW_FEED.map((article, index) => {
             return (
-                <Preview title={blog} desc={desc}/>
-            );
-        }
+                <Preview title={article.title} desc={article.desc} img_src={article.img_src} key={index}/>
+            )
+        })
     }
     return (
         <div className='feed-container'>
