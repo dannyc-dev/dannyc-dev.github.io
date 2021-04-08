@@ -1,23 +1,28 @@
 .preview-container {
-    padding: 20px;
+    padding: 30px;
     background: white;
     border-radius: 5px;
     min-height: 175px;
     font-family: 'Baloo Thambi 2', cursive;
     font-weight: 500;
     overflow: auto;
+    &:last-child {
+        border-bottom: none;
+    }
     .preview-container-left {
         position: relative;
         float: left;
-        width: 70%;
+        width: 60%;
+        padding: 5px;
         .preview-title {
             font-size: 30px;
         }
     }
     .preview-container-right {
         position: relative;
+        padding: 10px;
         float: right;
-        width: 30%;
+        width: 35%;
         img {
             display: flex;
             justify-content: center; 
@@ -26,4 +31,9 @@
         }
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    .preview-container {
+    }
 }

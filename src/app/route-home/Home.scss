@@ -15,6 +15,8 @@
         padding: 5px;
         border-radius: 25px;
         overflow: hidden;
+        height: 100%;
+        box-sizing: border-box;
     }
     .mobile-header {
         display: none;
@@ -27,6 +29,9 @@
 
 @media screen and (max-width: 480px) {
     .home-page {
+        height: 100vh;  
+        max-height: -webkit-fill-available;
+        overflow: hidden;
         .highlight {
             display: none;
         }
@@ -37,13 +42,15 @@
             position: relative;
             display: block;
             padding: 0px;
-            height: calc(100% - 110px);
+            height: 90%;
+            box-sizing: border-box;
         }
         .mobile-header {
             display: block !important;
             text-align: right;
             width: 100%;
             position: sticky;
+            position: -webkit-sticky;
         }
     }
 }

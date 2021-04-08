@@ -7,11 +7,22 @@ function Feed() {
     // API Call
     const feed = () => {
         return PREVIEW_FEED.map((article, index) => {
-            return (
-                <Preview title={article.title} desc={article.desc} img_src={article.img_src} key={index}/>
-            )
+            if (index !== PREVIEW_FEED.length - 1) {
+                return (
+                    <React.Fragment key={index}>
+                        <Preview title={article.title} desc={article.desc} img_src={article.img_src}/>
+                        <div className="divider"></div>
+                    </React.Fragment>
+                )
+            } else {
+                return (
+                    <Preview title={article.title} desc={article.desc} img_src={article.img_src} key={index}/>
+                )
+            }
+            
         })
     }
+    
     return (
         <div className='feed-container'>
             {feed()}
