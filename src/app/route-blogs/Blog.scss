@@ -13,15 +13,20 @@
         padding: 5px;
         border-radius: 25px;
         overflow: hidden;
-        height: 100%;
         box-sizing: border-box;
+        .footer {
+            font-family: 'Baloo Tammudu 2', cursive;
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding-bottom: 10px;
+            height: 25px;
+            background-color: white;
+        }
     }
     .mobile-header {
         display: none;
-    }
-    .feed {
-        float: right;
-        width: 75%;
     }
 }
 

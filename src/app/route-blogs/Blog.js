@@ -25,6 +25,7 @@ function Blog(props) {
                 <Logo />
                 <Socials toggle={menuToggle} onChange={handleToggle}/>
                 {menuToggle && <TwitterFeed />}
+                <span className="footer" role="img" aria-label="heart">Made with ❤️ by dannyc</span>
             </div>
             <Target />
         </div>
