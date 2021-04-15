@@ -21,7 +21,19 @@ ul li {
 
 ul li a {
     height: 70%;
-    min-height: 25px;
+    min-height: 20px;
+    background-color: #fff;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+}
+
+.menu-anchor {
+    padding-left: 5px;
+    height: 70%;
+    min-height: 20px;
     background-color: #fff;
     display: block;
     border-radius: 50%;
@@ -40,13 +52,32 @@ ul li a .icon {
     height: 17px;
 }
 
+ul li div .menu {
+    position: relative;
+    padding: 2px;
+    padding-top: 4px;
+    color: #fff;
+    transition: .5s;
+    z-index: 3;
+    height: 16px;
+}
+
 ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+ul li div:hover .menu {
     color: #fff;
     transform: rotateY(360deg);
 }
 
 a:hover .icon path{
     fill: #fff
+}
+
+div .menu {
+    fill: #eeeeee; 
 }
 
 a .twitter {
@@ -62,17 +93,17 @@ a .twitch {
 }
 
 a:hover .twitter{
-    padding-top: 5px !important;
-    height: 16px !important;
-}
-
-a:hover .linkedin{
-    padding-top: 5px !important;
+    padding-top: 6px !important;
     height: 15px !important;
 }
 
+a:hover .linkedin{
+    padding-top: 6px !important;
+    height: 14px !important;
+}
+
 a:hover .twitch {
-    padding-top: 5px !important;
+    padding-top: 6px !important;
     height: 15px !important;
 }
 
@@ -88,28 +119,43 @@ ul li a:before {
     z-index: 2;
 }
 
+
 ul li a:hover:before {
     top: 0;
 }
 
-ul li:nth-child(1) a:before{
+ul li div:hover:before {
+    top: 0;
+}
+
+ul li:nth-child(1) div:before{
+    background: #fff;
+}
+
+ul li:nth-child(2) a:before{
     background: #55acee;
 }
 
-ul li:nth-child(2) a:before {
+ul li:nth-child(3) a:before {
     background: #0077b5;
 }
 
-ul li:nth-child(3) a:before {
+ul li:nth-child(4) a:before {
     background: #0c0c0b;
 }
 
-ul li:nth-child(4) a:before{
+ul li:nth-child(5) a:before{
     background: #6441a5;
 }
 
 @media screen and (max-width: 480px) {
     ul {
         justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    ul li a {
+        height: 65%;
     }
 }

@@ -1,5 +1,5 @@
 .feed-container {
-    width: 70%;
+    width: 75%;
     padding-left: 5px;
     padding-right: 5px;
     float: right;
@@ -14,4 +14,18 @@
     width: 85%;
     display: block;
     margin: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .feed-container {
+        width: 100%;
+        float: none;
+        margin: auto;
+        position: relative;
+        display: block;
+        padding: 0px;
+        height: 90%;
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+    }
 }

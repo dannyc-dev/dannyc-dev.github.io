@@ -3,14 +3,21 @@ import { ReactComponent as TwitterIcon} from '../../../assets/twitter.svg';
 import { ReactComponent as GithubIcon} from '../../../assets/github.svg';
 import { ReactComponent as LinkedinIcon} from '../../../assets/linkedin.svg';
 import { ReactComponent as TwitchIcon} from '../../../assets/twitch.svg';
+import { ReactComponent as MenuIcon} from '../../../assets/burger.svg';
 import "./Socials.scss";
 
-function Socials() {
+function Socials(props) {
+    function handleChange(event) {
+        props.onChange(props.toggle);
+    }
     return (
         <div className="socials-container">
             <ul>
                 <li>
-                    <a href="https://twitter.com/danny_devv" target="_blank" rel="noreferrer">{<TwitterIcon className="icon twitter"/>}</a>
+                    <div className="menu-anchor" onClick={handleChange}>{<MenuIcon className="menu"/>}</div>
+                </li>
+                <li>
+                    <a href="https://twitter.com/dannyc_dev" target="_blank" rel="noreferrer">{<TwitterIcon className="icon twitter"/>}</a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/danny-colmenares/" target="_blank" rel="noreferrer">{<LinkedinIcon className="icon linkedin"/>}</a>

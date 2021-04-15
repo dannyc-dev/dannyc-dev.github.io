@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Logo from '../core/logo/Logo';
 import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
@@ -11,6 +11,10 @@ let MAP ={
 
 function Blog(props) {
     let Target = MAP[props.blog];
+    const [menuToggle, setMenuToggle] = useState(false);
+    function handleToggle(newValue) {
+        setMenuToggle(!newValue);
+    }
     return (
         <div className='blog-page'>
             <div className="mobile-header">
@@ -19,8 +23,8 @@ function Blog(props) {
             </div>
             <div className='highlight'>
                 <Logo />
-                <Socials />
-                <TwitterFeed/>
+                <Socials toggle={menuToggle} onChange={handleToggle}/>
+                {menuToggle && <TwitterFeed />}
             </div>
             <Target />
         </div>

@@ -30,7 +30,7 @@ function Preview(props) {
                     </div>
                 </div>
                 <div className="preview-container-right">
-                    <img src={require(`./../../../../assets/${props.img_src}`).default} />
+                    <img alt="Not Found" src={require(`./../../../../assets/${props.img_src}`).default} />
                 </div>
             </>}
         </div>

@@ -8,10 +8,13 @@
     // padding: 5px;
     .highlight {
         float: left;
-        width: 26%;
+        width: 20%;
         height: calc(100% - 10px);
         padding: 5px;
         border-radius: 25px;
+        overflow: hidden;
+        height: 100%;
+        box-sizing: border-box;
     }
     .mobile-header {
         display: none;
@@ -23,21 +26,19 @@
 }
 
 @media screen and (max-width: 480px) {
-    .highlight {
-        display: none;
-    }
-    .feed-container {
-        width: 100%;
-        float: none;
-        margin: auto;
-        position: relative;
-        display: block;
-        padding: 0px;
-        height: calc(100% - 110px);
-    }
-    .mobile-header {
-        display: block !important;
-        text-align: right;
-        width: 100%;
+    .home-page {
+        height: 100vh;  
+        max-height: -webkit-fill-available;
+        overflow: hidden;
+        .highlight {
+            display: none;
+        }
+        .mobile-header {
+            display: block !important;
+            text-align: right;
+            width: 100%;
+            position: sticky;
+            position: -webkit-sticky;
+        }
     }
 }

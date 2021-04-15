@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'; 
+import React, { useEffect } from 'react'; 
 import { useLocation, useHistory } from 'react-router-dom'
 import './Logo.scss';
 

@@ -10,15 +10,21 @@ function TwitterFeed() {
 
     return (
         <section className="twitterContainer">
+            <div className="menu-container">
+                <div className="about">
+                    about
+                </div>
+                <div className="contact">
+                    contact
+                </div>
+            </div>
             <div className="twitter-embed">
                 <a
                     className="twitter-timeline"
-                    // data-theme="dark"
-                    data-tweet-limit="8"
+                    data-tweet-limit="4"
                     data-chrome="noheader nofooter noborders noscrollbar"
-                    href="https://twitter.com/danny_devv"
+                    href="https://twitter.com/dannyc_dev"
                 >
-                Tweets by danny_devv
                 </a>
             </div>
         </section>
