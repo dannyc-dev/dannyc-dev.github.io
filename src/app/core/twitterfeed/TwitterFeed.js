@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { ReactComponent as InfoIcon } from '../../../assets/superhero.svg';
-import { ReactComponent as BlogIcon } from '../../../assets/blogging.svg';
-import { ReactComponent as ContactIcon } from '../../../assets/send.svg';
+import { ReactComponent as BlogIcon } from '../../../assets/content.svg';
+import { ReactComponent as ContactIcon } from '../../../assets/plane.svg';
 import './TwitterFeed.scss';
 
 function TwitterFeed() {
