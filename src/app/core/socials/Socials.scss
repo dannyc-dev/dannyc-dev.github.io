@@ -3,6 +3,7 @@
     width: 100%;
     height: 30px;
     margin-top: 10px;
+    box-sizing: border-box;
 }
 ul {
     display: flex;
@@ -28,6 +29,10 @@ ul li a {
     position: relative;
     overflow: hidden;
     border: 1px solid #fff;
+}
+
+ul li div {
+    cursor: pointer;
 }
 
 .menu-anchor {
@@ -67,10 +72,32 @@ ul li a:hover .icon {
     transform: rotateY(360deg);
 }
 
-ul li div:hover .menu {
-    color: #fff;
-    transform: rotateY(360deg);
+// ul li div:hover .menu {
+//     color: #fff;
+//     transform: rotateY(360deg);
+// }
+
+ul li .menu-animate {
+    animation-name: wobble;
+    animation-iteration-count: 1;
+    animation-duration: .5s;
 }
+
+@keyframes wobble {
+    25% {
+      transform: rotate(15deg);
+    }
+    50% {
+      transform: rotate(-30deg);
+    }
+    75% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+ 
 
 a:hover .icon path{
     fill: #fff

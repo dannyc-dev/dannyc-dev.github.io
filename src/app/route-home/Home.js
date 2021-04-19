@@ -21,7 +21,7 @@ function Home() {
                 <Logo />
                 <Socials toggle={menuToggle} onChange={handleToggle}/>
                 {menuToggle && <TwitterFeed />}
-                <span className="footer" role="img" aria-label="heart">Made with ❤️ by dannyc</span>
+                {!menuToggle && <span className="footer" role="img" aria-label="heart">Made with ❤️ by dannyc</span>}
             </div>
             <Feed />
         </div>
