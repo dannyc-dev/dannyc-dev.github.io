@@ -7,18 +7,16 @@ import { ReactComponent as MenuIcon} from '../../../assets/burger.svg';
 import "./Socials.scss";
 
 function Socials(props) {
-    const [menuAnimation, setMenuAnimation] = useState('');
+    const [menuAnimation, setMenuAnimation] = useState(false);
     function handleChange(event) {
         props.onChange(props.toggle);
-        console.log(event);
-        setMenuAnimation('menu-animate');
         
     }
     return (
         <div className="socials-container">
             <ul>
                 <li>
-                    <div className={menuAnimation + " menu-anchor"} onClick={handleChange}><MenuIcon className="menu"/></div>
+                    <div className={!menuAnimation ? "menu-animate-back menu-anchor" : "menu-animate menu-anchor"} onClick={(e) => {handleChange(e); setMenuAnimation(!menuAnimation)}} onAnimationEnd={() => setMenuAnimation(menuAnimation)}><MenuIcon className="menu"/></div>
                 </li>
                 <li>
                     <a href="https://twitter.com/dannyc_dev" target="_blank" rel="noreferrer"><TwitterIcon className="icon twitter"/></a>
