@@ -5,10 +5,16 @@
     box-sizing: border-box;
     font-family: 'Baloo Tammudu 2', cursive;
     text-align: center;
+    padding-top: 40px;
     .under-construction-header {
-        font-size: 45px;
         font-weight: 300;
         text-align: center;
+        .header {
+            font-size: 40px;
+        }
+        .message {
+            font-size: 32px;
+        }
     }
 }
 
