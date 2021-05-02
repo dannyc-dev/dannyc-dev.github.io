@@ -1,24 +1,18 @@
-import React, {useState} from 'react';
+import React, {useState} from 'react'; 
 import Logo from '../core/logo/Logo';
 import { CSSTransition } from 'react-transition-group';
 import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
-import RustPy from './rustpy/RustPy';
-import './Blog.scss';
+import Construction from '../core/construction/Construction';
+import './Contact.scss';
 
-let MAP ={
-    'RustPy': RustPy
-}
-
-function Blog(props) {
-    let Target = MAP[props.blog];
+function Contact(props) {
     const [menuToggle, setMenuToggle] = useState(false);
     function handleToggle(newValue) {
         setMenuToggle(!newValue);
     }
-
     return (
-        <div className='blog-page'>
+        <div className="contact-page">
             <div className="mobile-header">
                 <Logo />
                 <Socials toggle={menuToggle} onChange={handleToggle}/>
@@ -49,9 +43,13 @@ function Blog(props) {
                 
                 {!menuToggle && <span className="footer" role="img" aria-label="heart">Made with ❤️ by dannyc</span>}
             </div>
-            <Target />
+            <div className="contact-feed" >
+                <div className="under-construction-container">
+                    <Construction />
+                </div>
+            </div>
         </div>
     )
 }
 
-export default Blog;
+export default Contact;

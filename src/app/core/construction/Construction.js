@@ -6,10 +6,11 @@ import './Construction.scss';
 function Construction() {
     return (
         <div className="construction-page">
-            <div className="under-construction-header">
-                Under Construction
-            </div>
             <ConstructionLogo />
+            <div className="under-construction-header">
+                <p className="header">Under Construction</p>
+                <p className="message">Check back soon for updates :)</p>
+            </div>
         </div>  
     )
 }

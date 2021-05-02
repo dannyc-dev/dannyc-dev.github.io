@@ -11,12 +11,23 @@ function Home() {
     function handleToggle(newValue) {
         setMenuToggle(!newValue);
     }
-
+    
     return (
         <div className='home-page'>
             <div className="mobile-header">
                 <Logo />
                 <Socials toggle={menuToggle} onChange={handleToggle}/>
+                <CSSTransition
+                    in={menuToggle}
+                    className="overlay"
+                    timeout={300}
+                    classNames="alert-mobile"
+                    unmountOnExit
+                    // onEnter={() => console.log("enter")}
+                    // onExited={() => console.log("exit")}
+                    >
+                    <TwitterFeed menuValue={menuToggle} isMobile={true} menu={menuToggle} closeMenu={handleToggle}/>
+                </CSSTransition>
             </div>
             <div className='highlight'>
                 <Logo />
@@ -26,9 +37,9 @@ function Home() {
                     timeout={300}
                     classNames="alert"
                     unmountOnExit
-                    onEnter={() => console.log("enter")}
-                    onExited={() => console.log("exit")}
-                ><TwitterFeed menuValue={menuToggle}/>
+                    // onEnter={() => console.log("enter")}
+                    // onExited={() => console.log("exit")}
+                ><TwitterFeed menuValue={menuToggle} isMobile={false} menu={menuToggle} closeMenu={handleToggle}/>
                 </CSSTransition>
                 
                 {!menuToggle && <span className="footer" role="img" aria-label="heart">Made with ❤️ by dannyc</span>}

@@ -11,3 +11,19 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .construction-page {
+        padding-top: 35px;
+        .under-construction-header {
+            font-weight: 300;
+            text-align: center;
+            .header {
+                font-size: 30px
+            }
+            .message {
+                font-size: 22px;
+            }   
+        }
+    }
+}
