@@ -2,6 +2,8 @@
     padding-top: 15px;
     overflow: hidden;
     height: 100%;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
     .menu-container {
         display: block;
         width: 100%;
@@ -12,6 +14,10 @@
         margin: auto;
         overflow: hidden;
         position: sticky;
+        .menu-item:hover .about {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+        }
         .menu-item {
             display: inline-block;
             width: 100%;
@@ -36,7 +42,7 @@
                 width: 20px;
                 animation-name: wiggleWiggle;
                 animation-iteration-count: 1;
-                animation-duration: .40s;
+                animation-duration: .7s;
                 cursor: pointer;
                 display: inline-block;
                 // &:hover {
@@ -49,7 +55,7 @@
                 width: 15px;
                 animation-name: wiggleWiggle;
                 animation-iteration-count: 1;
-                animation-duration: .40s;
+                animation-duration: .7s;
                 cursor: pointer;
                 display: inline-block;
                 padding-right: 3px;
@@ -62,7 +68,7 @@
                 width: 15px;
                 animation-name: wiggleWiggle;
                 animation-iteration-count: 1;
-                animation-duration: .40s;
+                animation-duration: .7s;
                 cursor: pointer;
                 display: inline-block;
                 padding-right: 2px;
@@ -74,10 +80,10 @@
                 display: inline-block;
                 font-size: 20px;
                 font-weight: 400;
-                &:hover {
-                    text-decoration: underline;
-                    text-decoration-thickness: 1px;
-                }
+                // &:hover {
+                //     text-decoration: underline;
+                //     text-decoration-thickness: 1px;
+                // }
             }
         }
     }

@@ -1,5 +1,6 @@
 import React, {useState} from 'react'; 
 import Logo from '../core/logo/Logo';
+import { CSSTransition } from 'react-transition-group';
 import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
 import Feed from './components/feed/Feed';
@@ -20,7 +21,16 @@ function Home() {
             <div className='highlight'>
                 <Logo />
                 <Socials toggle={menuToggle} onChange={handleToggle}/>
-                {menuToggle && <TwitterFeed />}
+                <CSSTransition
+                    in={menuToggle}
+                    timeout={300}
+                    classNames="alert"
+                    unmountOnExit
+                    onEnter={() => console.log("enter")}
+                    onExited={() => console.log("exit")}
+                ><TwitterFeed menuValue={menuToggle}/>
+                </CSSTransition>
+                
                 {!menuToggle && <span className="footer" role="img" aria-label="heart">Made with ❤️ by dannyc</span>}
             </div>
             <Feed />
