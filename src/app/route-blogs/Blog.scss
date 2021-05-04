@@ -8,20 +8,22 @@
     // padding: 5px;
     .highlight {
         float: left;
-        width: 20%;
-        height: calc(100% - 10px);
+        width: calc(20% - 10px);
+        height: 100%;
         padding: 5px;
         border-radius: 25px;
         overflow: hidden;
         box-sizing: border-box;
+        position: relative;
         .footer {
             font-family: 'Baloo Tammudu 2', cursive;
             font-size: 14px;
             position: absolute;
             bottom: 0;
             width: 100%;
-            padding-bottom: 10px;
             height: 25px;
+            padding-bottom: 10px;
+            padding-left: 2px;
             background-color: white;
         }
     }
