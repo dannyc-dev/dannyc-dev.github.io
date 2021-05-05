@@ -10,7 +10,23 @@ import './TwitterFeed.scss';
 function TwitterFeed(props) {
     let history = useHistory();
     const location = useLocation();
-    const [showHome, setShowHome] = useState(false);
+    // const [showHome, setShowHome] = useState(false);
+    const [touchStart, setTouchStart] = useState(0);
+    const [touchEnd, setTouchEnd] = useState(0);
+
+    function handleTouchStart(e) {
+        setTouchStart(e.targetTouches[0].clientY);
+    }
+
+    function handleTouchMove(e) {
+        setTouchEnd(e.targetTouches[0].clientY);
+    }
+
+    function handleTouchEnd() {
+        if (touchStart - touchEnd > 125) {
+            close_menu();
+        }
+    }
     useEffect(() => {
         // Twitter Feed Load
         // const script = document.createElement("script");
@@ -33,7 +49,10 @@ function TwitterFeed(props) {
     }
 
     return (
-        <section className={"twitterContainer"}>
+        <section className={"twitterContainer"}
+            onTouchStart={touchStartEvent => handleTouchStart(touchStartEvent)} 
+            onTouchMove={touchMoveEvent => handleTouchMove(touchMoveEvent)} 
+            onTouchEnd={() => handleTouchEnd()}>
             <div className="close-menu">
                 <CloseIcon className="close-icon" onClick={(e) => {close_menu(e)}}/>
             </div>
