@@ -141,13 +141,16 @@
                 border-bottom: none;
                 // color: white;
                 // background-color: rgba(255, 255, 255, 0.7);
+                .about {
+                    font-size: 22px;
+                }
             }
         }
         .close-menu {
             display: inline-block;
             float: left;
-            height: 30px;
-            width: 30px;
+            height: 25px;
+            width: 25px;
             padding-left: 20px;
             margin-top: 15px;
             // background-color: rgba(255, 255, 255, 0.7);
