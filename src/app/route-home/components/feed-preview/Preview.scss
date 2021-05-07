@@ -16,6 +16,8 @@
         padding: 5px;
         .preview-title {
             font-size: 30px;
+            font-family: "Inter", sans-serif;
+            padding-bottom: 10px;
         }
     }
     .preview-container-right {
@@ -35,5 +37,34 @@
 
 @media screen and (max-width: 480px) {
     .preview-container {
+        padding: 10px;
+        overflow: hidden;
+        box-sizing: border-box;
+        .preview-container-top {
+            display: block;
+            position: relative;
+            width: 100%;
+            padding: 5px;
+            img {
+                display: flex;
+                justify-content: center; 
+                align-items: center;
+                width: 98%;
+            }
+        }
+        .preview-container-bot {
+            display: block;
+            position: relative;
+            width: 95%;
+            padding: 10px;
+            .preview-title {
+                font-size: 21px;
+                font-family: "Inter", sans-serif;
+                padding-bottom: 10px;
+            }
+            .preview-body {
+                font-size: 15px;
+            }
+        }
     }
 }

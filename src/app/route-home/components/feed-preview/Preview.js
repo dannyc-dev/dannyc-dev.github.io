@@ -11,10 +11,13 @@ function Preview(props) {
         <div className="preview-container">
             {isMobileDevice && <>
                 <div className="preview-container-top">
-                    Mobile Top
+                    <img alt="Not Found" src={require(`./../../../../assets/${props.img_src}`).default} />
                 </div>
                 <div className="preview-container-bot">
-                    Mobile Bottom
+                    <div className="preview-title">{props.title}</div>
+                    <div className="preview-body">
+                        {props.desc}
+                    </div>
                 </div>
             </>}
             {!isMobileDevice && <>

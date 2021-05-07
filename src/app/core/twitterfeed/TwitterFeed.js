@@ -11,19 +11,19 @@ function TwitterFeed(props) {
     let history = useHistory();
     const location = useLocation();
     // const [showHome, setShowHome] = useState(false);
-    const [touchStart, setTouchStart] = useState(0);
-    const [touchEnd, setTouchEnd] = useState(0);
+    const [touchStartY, setTouchStartY] = useState(0);
+    const [touchEndY, setTouchEndY] = useState(0);
 
     function handleTouchStart(e) {
-        setTouchStart(e.targetTouches[0].clientY);
+        setTouchStartY(e.targetTouches[0].clientY);
     }
 
     function handleTouchMove(e) {
-        setTouchEnd(e.targetTouches[0].clientY);
+        setTouchEndY(e.targetTouches[0].clientY);
     }
 
-    function handleTouchEnd() {
-        if (touchStart - touchEnd > 125) {
+    function handleTouchEnd(e) {
+        if (touchStartY - touchEndY > 100 && touchEndY !== 0) {
             close_menu();
         }
     }
@@ -52,7 +52,8 @@ function TwitterFeed(props) {
         <section className={"twitterContainer"}
             onTouchStart={touchStartEvent => handleTouchStart(touchStartEvent)} 
             onTouchMove={touchMoveEvent => handleTouchMove(touchMoveEvent)} 
-            onTouchEnd={() => handleTouchEnd()}>
+            onTouchEnd={(e) => handleTouchEnd(e)}
+            >
             <div className="close-menu">
                 <CloseIcon className="close-icon" onClick={(e) => {close_menu(e)}}/>
             </div>

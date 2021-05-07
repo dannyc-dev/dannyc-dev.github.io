@@ -3,7 +3,7 @@ import Preview from '../feed-preview/Preview';
 import {PREVIEW_FEED} from './Metadata';
 import './Feed.scss';
 
-function Feed() {
+function Feed(props) {
     // API Call
     const feed = () => {
         return PREVIEW_FEED.map((article, index) => {
@@ -24,7 +24,7 @@ function Feed() {
     }
     
     return (
-        <div className='feed-container'>
+        <div className={'feed-container'}>
             {feed()}
         </div>
     )
