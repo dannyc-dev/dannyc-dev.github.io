@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Blog.scss';
 
-function RustPy(props) {
+function StackSmash(props) {
     return (
         <div className="blog-body">
             <div className="blog-title">Test</div>
@@ -12,4 +12,4 @@ function RustPy(props) {
     );
 }
 
-export default RustPy;
+export default StackSmash;

@@ -3,11 +3,11 @@ import Logo from '../core/logo/Logo';
 import { CSSTransition } from 'react-transition-group';
 import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
-import RustPy from './rustpy/RustPy';
+import StackSmash from './sts/StackSmash';
 import './Blog.scss';
 
 let MAP ={
-    'RustPy': RustPy
+    'StackSmash': StackSmash
 }
 
 function Blog(props) {

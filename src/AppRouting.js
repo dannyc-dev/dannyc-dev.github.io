@@ -14,7 +14,7 @@ function AppRouting(props) {
             </Route>
             <Route exact path="/" render={() => <Home />}/>
             <Route exact path="/about" render={() => <About />}/>
-            <Route exact path="/rustpy" render={() => <Blog blog='RustPy' />}/>
+            <Route exact path="/sts" render={() => <Blog blog='StackSmash' />}/>
             <Route exact path="/contact" render={() => <Contact />}/>
             <Route component={NotFound} status={404}/>
         </Switch> 

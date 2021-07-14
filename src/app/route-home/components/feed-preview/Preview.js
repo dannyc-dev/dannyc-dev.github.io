@@ -27,7 +27,7 @@ function Preview(props) {
                         {props.desc}
                     </div>
                     <div className="preview-link">
-                    <Link to="/rustpy">
+                    <Link to={props.link}>
                         <p>Read More</p>
                     </Link>
                     </div>

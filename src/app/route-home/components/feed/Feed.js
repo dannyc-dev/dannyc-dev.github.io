@@ -10,13 +10,13 @@ function Feed(props) {
             if (index !== PREVIEW_FEED.length - 1) {
                 return (
                     <React.Fragment key={index}>
-                        <Preview title={article.title} desc={article.desc} img_src={article.img_src}/>
+                        <Preview title={article.title} desc={article.desc} img_src={article.img_src} link={article.link}/>
                         <div className="divider"></div>
                     </React.Fragment>
                 )
             } else {
                 return (
-                    <Preview title={article.title} desc={article.desc} img_src={article.img_src} key={index}/>
+                    <Preview title={article.title} desc={article.desc} img_src={article.img_src} key={index} link={article.link}/>
                 )
             }
             
