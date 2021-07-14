@@ -23,6 +23,7 @@ function Preview(props) {
             {!isMobileDevice && <>
                 <div className="preview-container-left">
                     <div className="preview-title">{props.title}</div>
+                    <div className="preview-subtitle">{props.sub_title}</div>
                     <div className="preview-body">
                         {props.desc}
                     </div>
