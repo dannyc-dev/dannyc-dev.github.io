@@ -3,15 +3,19 @@ import Logo from '../core/logo/Logo';
 import { CSSTransition } from 'react-transition-group';
 import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
+
+// Import componenets
 import StackSmash from './sts/StackSmash';
+
 import './Blog.scss';
 
+// Map components
 let MAP ={
-    'StackSmash': StackSmash
+    '/sts': StackSmash
 }
 
 function Blog(props) {
-    let Target = MAP[props.blog];
+    let Target = MAP[props.location.pathname];
     const [menuToggle, setMenuToggle] = useState(false);
     function handleToggle(newValue) {
         setMenuToggle(!newValue);

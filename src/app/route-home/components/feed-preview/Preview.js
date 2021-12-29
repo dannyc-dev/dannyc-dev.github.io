@@ -23,14 +23,12 @@ function Preview(props) {
             {!isMobileDevice && <>
                 <div className="preview-container-left">
                     <div className="preview-title">{props.title}</div>
-                    <div className="preview-subtitle">{props.sub_title}</div>
+                    <div className="preview-subtitle">{props.subtitle}</div>
                     <div className="preview-body">
                         {props.desc}
                     </div>
                     <div className="preview-link">
-                    <Link to={props.link}>
-                        <p>Read More</p>
-                    </Link>
+                    <Link to={{pathname: `/${props.link}`}}> <p>Read More</p> </Link>
                     </div>
                 </div>
                 <div className="preview-container-right">

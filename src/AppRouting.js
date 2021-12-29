@@ -14,8 +14,13 @@ function AppRouting(props) {
             </Route>
             <Route exact path="/" render={() => <Home />}/>
             <Route exact path="/about" render={() => <About />}/>
-            <Route exact path="/sts" render={() => <Blog blog='StackSmash' />}/>
             <Route exact path="/contact" render={() => <Contact />}/>
+            {/* Add custom path for new posts
+            * Ex.
+            *  <Route exact path="/example" render={(props) => <Blog {...props} />}/>
+            */}
+            <Route exact path="/sts" render={(props) => <Blog {...props}/>}/>
+
             <Route component={NotFound} status={404}/>
         </Switch> 
     )
