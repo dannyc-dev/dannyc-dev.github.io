@@ -11,7 +11,7 @@ function Preview(props) {
         <div className="preview-container">
             {isMobileDevice && <>
                 <div className="preview-container-top">
-                    <img alt="Not Found" src={require(`./../../../../assets/${props.img_src}`).default} />
+                    <img alt="Not Found" src={require(`./assets/${props.img_src}`)} />
                 </div>
                 <div className="preview-container-bot">
                     <div className="preview-title">{props.title}</div>
@@ -34,7 +34,7 @@ function Preview(props) {
                     </div>
                 </div>
                 <div className="preview-container-right">
-                    <img alt="Not Found" src={require(`./../../../../assets/${props.img_src}`).default} />
+                    <img alt="Not Found" src={require(`./assets/${props.img_src}`)} />
                 </div>
             </>}
         </div>

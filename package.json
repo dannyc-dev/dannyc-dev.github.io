@@ -1,6 +1,6 @@
 {
-  "name": "danny-devv.github.io",
-  "homepage": "http://danny-devv.github.io/",
+  "name": "dannyc-dev.github.io",
+  "homepage": "http://dannyc-dev.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,10 +10,11 @@
     "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-responsive": "^8.2.0",
+    "react-responsive": "^9.0.0-beta.5",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
+    "react-scripts": "^5.0.0",
     "react-transition-group": "^4.4.1",
+    "sass": "^1.45.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
