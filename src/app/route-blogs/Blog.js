@@ -28,7 +28,6 @@ function Blog(props) {
                 <Socials toggle={menuToggle} onChange={handleToggle}/>
                 <CSSTransition
                     in={menuToggle}
-                    className="overlay"
                     timeout={300}
                     classNames="alert-mobile"
                     unmountOnExit

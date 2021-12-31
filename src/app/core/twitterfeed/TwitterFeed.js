@@ -66,14 +66,14 @@ function TwitterFeed(props) {
                     <InfoIcon className="info"/>
                     <div className="about">About</div>
                 </div>
-                <div className="menu-item">
+                <div className="menu-item" onClick={(e) => {redirect('home');}}>
                     <BlogIcon className="blog"/>
                     <div className="about">Blog</div>
                 </div>
-                <div className="menu-item" onClick={() => {redirect('contact')}}>
+                {/* <div className="menu-item" onClick={() => {redirect('contact')}}>
                     <ContactIcon className="contact"/>
                     <div className="about">Contact</div>
-                </div>
+                </div> */}
             </div>
             <div className="twitter-embed">
                 {/* <a

@@ -4,6 +4,7 @@ import { CSSTransition } from 'react-transition-group';
 import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
 import Construction from '../core/construction/Construction';
+import AboutPreview from './about-preview/AboutPreview';
 import './About.scss';
 
 function About() {
@@ -18,7 +19,6 @@ function About() {
                 <Socials toggle={menuToggle} onChange={handleToggle}/>
                 <CSSTransition
                     in={menuToggle}
-                    className="overlay"
                     timeout={300}
                     classNames="alert-mobile"
                     unmountOnExit
@@ -43,10 +43,11 @@ function About() {
                 
                 {!menuToggle && <span className="footer" role="img" aria-label="heart">Made with ❤️ by dannyc</span>}
             </div>
-            <div className="about-feed" >
-                <div className="under-construction-container">
+            <div className="about-feed">
+                {/* <div className="under-construction-container">
                     <Construction />
-                </div>
+                </div> */}
+                <AboutPreview />
             </div>
         </div>
     )
