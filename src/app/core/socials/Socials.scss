@@ -203,7 +203,7 @@ ul li:nth-child(5) a:before{
     }
 
     ul li a {
-        height: 65%;
+        height: 60%;
     }
 
     ul li div .menu {
@@ -211,6 +211,21 @@ ul li:nth-child(5) a:before{
     }
 
     ul li a .icon {
-        height: 20px;
+        height: 22px;
+    }
+
+    a:hover .twitter{
+        padding-top: 6px !important;
+        height: 18px !important;
+    }
+    
+    a:hover .linkedin{
+        padding-top: 6px !important;
+        height: 18px !important;
+    }
+    
+    a:hover .twitch {
+        padding-top: 6px !important;
+        height: 18px !important;
     }
 }
