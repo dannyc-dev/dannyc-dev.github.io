@@ -31,8 +31,6 @@ function Blog(props) {
                     timeout={300}
                     classNames="alert-mobile"
                     unmountOnExit
-                    // onEnter={() => console.log("enter")}
-                    // onExited={() => console.log("exit")}
                     >
                     <TwitterFeed menuValue={menuToggle} isMobile={true} menu={menuToggle} closeMenu={handleToggle}/>
                 </CSSTransition>
@@ -45,8 +43,6 @@ function Blog(props) {
                     timeout={300}
                     classNames="alert"
                     unmountOnExit
-                    // onEnter={() => console.log("enter")}
-                    // onExited={() => console.log("exit")}
                 ><TwitterFeed menuValue={menuToggle} isMobile={false} menu={menuToggle} closeMenu={handleToggle}/>
                 </CSSTransition>
                 

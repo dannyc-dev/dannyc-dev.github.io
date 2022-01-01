@@ -3,7 +3,6 @@ import Logo from '../core/logo/Logo';
 import { CSSTransition } from 'react-transition-group';
 import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
-import Construction from '../core/construction/Construction';
 import AboutPreview from './about-preview/AboutPreview';
 import './About.scss';
 
@@ -22,8 +21,6 @@ function About() {
                     timeout={300}
                     classNames="alert-mobile"
                     unmountOnExit
-                    // onEnter={() => console.log("enter")}
-                    // onExited={() => console.log("exit")}
                     >
                     <TwitterFeed menuValue={menuToggle} isMobile={true} menu={menuToggle} closeMenu={handleToggle}/>
                 </CSSTransition>
@@ -36,17 +33,12 @@ function About() {
                     timeout={300}
                     classNames="alert"
                     unmountOnExit
-                    // onEnter={() => console.log("enter")}
-                    // onExited={() => console.log("exit")}
                 ><TwitterFeed menuValue={menuToggle} isMobile={false} menu={menuToggle} closeMenu={handleToggle}/>
                 </CSSTransition>
                 
                 {!menuToggle && <span className="footer" role="img" aria-label="heart">Made with ❤️ by dannyc</span>}
             </div>
             <div className="about-feed">
-                {/* <div className="under-construction-container">
-                    <Construction />
-                </div> */}
                 <AboutPreview />
             </div>
         </div>

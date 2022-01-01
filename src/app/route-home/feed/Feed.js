@@ -1,6 +1,6 @@
 import React from 'react';
 import Preview from '../feed-preview/Preview';
-import {PREVIEW_FEED} from './Metadata';
+import {PREVIEW_FEED} from '../../../Metadata';
 import './Feed.scss';
 
 function Feed(props) {

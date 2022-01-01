@@ -8,8 +8,8 @@ function Construction() {
         <div className="construction-page">
             <ConstructionLogo />
             <div className="under-construction-header">
-                <p className="header">Under Construction</p>
-                <p className="message">Check back soon for updates :)</p>
+                <p className="header">Coming Soon!</p>
+                <p className="message"></p>
             </div>
         </div>  
     )

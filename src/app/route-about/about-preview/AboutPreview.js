@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group';
 
 import profileImage from '../../../assets/aboutme.jpg';
 
@@ -8,7 +8,6 @@ import './AboutPreview.scss';
 function AboutPreview(props) {
     const [animate, setAnimate] = useState(false);
     useEffect(() => {
-        // setTimeout(()=>setAnimate(true), 500);
         setAnimate(true);
     }, [])
     return (
@@ -18,10 +17,8 @@ function AboutPreview(props) {
                 timeout={300}
                 classNames="image-preview"
                 unmountOnExit
-                // onEnter={() => console.log("enter")}
-                // onExited={() => console.log("exit")}
             >
-            <img className="profile" alt="Profile picture" src={profileImage}></img>
+            <img className="profile" alt="Profile" src={profileImage}></img>
             </CSSTransition>
             <CSSTransition
                 in={animate}

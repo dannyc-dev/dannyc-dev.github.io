@@ -4,7 +4,7 @@ import { CSSTransition } from 'react-transition-group';
 import { useMediaQuery } from 'react-responsive';
 import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
-import Feed from './components/feed/Feed';
+import Feed from './feed/Feed';
 import './Home.scss';
 
 function Home(props) {
@@ -28,8 +28,6 @@ function Home(props) {
                         timeout={300}
                         classNames="alert-mobile"
                         unmountOnExit
-                        // onEnter={() => console.log("enter")}
-                        // onExited={() => console.log("exit")}
                         >
                         <TwitterFeed menuValue={menuToggle} isMobile={isMobileDevice} menu={menuToggle} closeMenu={handleToggle}/>
                     </CSSTransition>

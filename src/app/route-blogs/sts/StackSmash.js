@@ -1,13 +1,11 @@
 import React from 'react';
+import Construction from '../../core/construction/Construction';
 import '../Blog.scss';
 
 function StackSmash(props) {
     return (
         <div className="blog-body">
-            <div className="blog-title">Test</div>
-            <div className="blog-body">
-                Test
-            </div>
+            <Construction />
         </div>
     );
 }
