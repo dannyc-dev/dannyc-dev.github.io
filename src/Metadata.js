@@ -15,9 +15,9 @@ export const PREVIEW_FEED = [
         'link': 'sts'
     },
     {
-        'title': 'Game Programming Static Offsets - Making and Breaking',
-        'subtitle': 'Windows game programming',
-        'desc':  `Explore the world of static pointer offsets.`,
+        'title': 'Game Programming - Static Offsets',
+        'subtitle': 'Windows game programming: creating and hooking static pointer offsets in memory',
+        'desc':  `Explore the world of static pointer offsets. Join me on the journey of making and breaking a command line game by hooking and modifying static pointer offsets directly in memory.`,
         'img_src': 'placeholder.jpeg',
         'link': 'sts'
     },
