@@ -1,4 +1,5 @@
 # dannyc source
+![CI/CD](https://github.com/dannyc-dev/dannyc-dev.github.io/workflows/CI/CD/badge.svg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and deployed via Github Pages. 
 
