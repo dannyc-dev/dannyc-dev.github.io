@@ -28,7 +28,7 @@ function Socials(props) {
                     <a href="https://github.com/dannyc-dev" target="_blank" rel="noreferrer"><GithubIcon className="icon"/></a>
                 </li>
                 <li>
-                    <a href="https://www.twitch.tv/dev_danny_" target="_blank" rel="noreferrer"><TwitchIcon className="icon twitch"/></a>
+                    <a href="https://www.twitch.tv/dannyc_dev" target="_blank" rel="noreferrer"><TwitchIcon className="icon twitch"/></a>
                 </li>
             </ul>
         </div>
