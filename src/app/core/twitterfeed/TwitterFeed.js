@@ -78,7 +78,7 @@ function TwitterFeed(props) {
             </div>
             <div className="twitter-embed">
                 {props.isMobile && 
-                    <div className="swipe-up">
+                    <div className="swipe-up" onClick={(e) => {close_menu(e)}}>
                         <img className='swipey' src={ SwipeUp } />
                     </div>
                 }

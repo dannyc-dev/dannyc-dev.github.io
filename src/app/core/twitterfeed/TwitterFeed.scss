@@ -178,6 +178,11 @@
         }
         .twitter-embed {
             .swipe-up {
+                height: 75px;
+                display: block;
+                position: absolute;
+                bottom: 40px;
+                width: 100%;
                 .swipey {
                     height: 30px;
                     display: block;
