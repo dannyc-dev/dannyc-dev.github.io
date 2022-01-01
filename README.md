@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Welcome to my portfolio page!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and deployed via Github Pages. 
+
+#### Adding an entry
+
+1. Create entry Metadata.js
+2. Create  `src/app/route-blogs` component
+3. Link component `src/app/route-blogs/Blog.js` MAP
+3. Link/Add component AppRouting.js
 
 ## Available Scripts
 
