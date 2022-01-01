@@ -27,8 +27,10 @@
         text-align: left;
         padding: 15px;
         font-size: 20px;
+        
         .header {
             font-size: 22px;
+            font-weight: 500;
         }
     }
 
@@ -54,4 +56,12 @@
         transition: opacity 800ms, transform 400ms;
     }
       
+}
+
+@media screen and (max-width: 480px) {
+    .about-preview {
+        .profile {
+            height: 250px;
+        }
+    }
 }
