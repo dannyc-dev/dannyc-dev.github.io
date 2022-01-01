@@ -201,10 +201,16 @@ ul li:nth-child(5) a:before{
     ul {
         justify-content: flex-end;
     }
-}
 
-@media screen and (max-width: 480px) {
     ul li a {
         height: 65%;
+    }
+
+    ul li div .menu {
+        height: 20px;
+    }
+
+    ul li a .icon {
+        height: 20px;
     }
 }
