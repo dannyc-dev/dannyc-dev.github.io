@@ -5,6 +5,7 @@ import { ReactComponent as BlogIcon } from '../../../assets/content.svg';
 import { ReactComponent as ContactIcon } from '../../../assets/plane.svg';
 import { ReactComponent as HomeIcon } from '../../../assets/house.svg';
 import { ReactComponent as CloseIcon } from '../../../assets/cancel.svg';
+import  SwipeUp from '../../../assets/arrows.png';
 import './TwitterFeed.scss';
 
 function TwitterFeed(props) {
@@ -76,6 +77,11 @@ function TwitterFeed(props) {
                 </div> */}
             </div>
             <div className="twitter-embed">
+                {props.isMobile && 
+                    <div className="swipe-up">
+                        <img className='swipey' src={ SwipeUp } />
+                    </div>
+                }
                 {/* <a
                     className="twitter-timeline"
                     data-tweet-limit="4"
