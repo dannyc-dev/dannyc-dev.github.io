@@ -27,13 +27,14 @@
         }
     }
     .about-feed {
-        width: calc(85% - 10px);
+        width: 85%;
         padding-left: 0px;
         padding-right: 10px;
         float: right;
         padding-top: 15px;
         height: calc(100% - 10px);
         overflow: auto;
+        box-sizing: border-box;
         // background: #efeff0;
     }
     .mobile-header {
