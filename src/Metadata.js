@@ -15,9 +15,9 @@ export const PREVIEW_FEED = [
         'link': 'sts'
     },
     {
-        'title': 'Game Programming - Static Offsets',
-        'subtitle': 'Windows game programming: creating and hooking static pointer offsets in memory',
-        'desc':  `Explore the world of static pointer offsets. Join me on the journey of making and breaking a command line game by hooking and modifying static pointer offsets directly in memory.`,
+        'title': 'Battle Arena Prototype',
+        'subtitle': 'Creating and hooking static offset pointers in memory',
+        'desc':  `Explore the world of static offset pointers and join me on the journey of making and breaking a command line battle arena game. Find, hook, and modify memory to seal your fate in the arena.`,
         'img_src': 'placeholder.jpeg',
         'link': 'sts'
     },

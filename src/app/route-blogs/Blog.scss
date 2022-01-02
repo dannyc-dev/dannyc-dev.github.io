@@ -27,6 +27,15 @@
             background-color: white;
         }
     }
+    .blog-body {
+        width: calc(80% - 10px);
+        padding-left: 5px;
+        padding-right: 5px;
+        float: right;
+        padding-top: 10px;
+        height: calc(100% - 10px);
+        overflow: auto;
+    }
     .mobile-header {
         display: none;
     }
@@ -39,6 +48,9 @@
         overflow: hidden;
         .highlight {
             display: none;
+        }
+        .blog-body {
+            width: 100%;
         }
         .mobile-header {
             display: block !important;

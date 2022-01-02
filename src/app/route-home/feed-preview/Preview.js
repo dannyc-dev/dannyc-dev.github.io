@@ -18,6 +18,9 @@ function Preview(props) {
                     <div className="preview-body">
                         {props.desc}
                     </div>
+                    <div className="preview-link">
+                        <Link to={{pathname: `/${props.link}`}}> <p>Read More</p> </Link>
+                    </div>
                 </div>
             </>}
             {!isMobileDevice && <>

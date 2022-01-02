@@ -1,5 +1,7 @@
 ## dannyc source
-![CI/CD](https://github.com/dannyc-dev/dannyc-dev.github.io/workflows/CI/CD/badge.svg)
+![CI/CD](https://github.com/dannyc-dev/dannyc-dev.github.io/workflows/CI/CD/badge.svg) ![Version](https://img.shields.io/github/package-json/v/dannyc-dev/dannyc-dev.github.io)
+
+Project: [https://dannyc-dev.github.io](https://dannyc-dev.github.io)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and deployed via Github Actions to GH Pages.
 

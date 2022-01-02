@@ -1,0 +1,16 @@
+.home-container {
+    .home-logo {
+        height: 30px;
+        padding-left: 10px;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-container {
+        .home-logo {
+            display: none;
+        }
+    }
+}

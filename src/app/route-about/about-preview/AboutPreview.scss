@@ -4,7 +4,6 @@
     width: 100%;
     box-sizing: border-box;
     font-family: 'Baloo Tammudu 2', cursive;
-    padding-top: 20px;
     text-align: center;
     .image-preview-enter {
         opacity: 0;
@@ -19,7 +18,10 @@
     .profile {
         border-radius: 50%;
         height: 300px;
-        
+        box-shadow: 10px 10px 5px #ccc;
+        -moz-box-shadow: 10px 10px 5px #ccc;
+        -webkit-box-shadow: 10px 10px 5px #ccc;
+        -khtml-box-shadow: 10px 10px 5px #ccc;
     }
     .about-me {
         display: block;
@@ -27,7 +29,7 @@
         text-align: left;
         padding: 15px;
         font-size: 20px;
-        
+        padding-bottom: 30px;
         .header {
             font-size: 22px;
             font-weight: 500;
