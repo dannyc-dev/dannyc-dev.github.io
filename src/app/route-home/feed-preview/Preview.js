@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
+import { CSSTransition } from 'react-transition-group';
 import './Preview.scss';
 
 function Preview(props) {
+    const [animate, setAnimate] = useState(false);
+    useEffect(() => {
+        setAnimate(true);
+    }, [])
     const isMobileDevice = useMediaQuery({
         query: '(max-device-width: 480px)'
     })
     return (
+        <CSSTransition
+            in={animate}
+            timeout={300}
+            classNames="fade"
+            unmountOnExit
+        >
         <div className="preview-container">
             {isMobileDevice && <>
                 <div className="preview-container-top">
@@ -39,6 +50,7 @@ function Preview(props) {
                 </div>
             </>}
         </div>
+        </CSSTransition>
     )
 }
 

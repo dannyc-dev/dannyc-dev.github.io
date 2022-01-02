@@ -35,6 +35,21 @@
         padding-top: 10px;
         height: calc(100% - 10px);
         overflow: auto;
+        .blog-header-container {
+            display: block;
+            position: relative;
+            margin: auto;
+            width: 100%;
+            overflow: hidden;
+            height: 40%;
+            .blog-header {
+                position: relative;
+                display: block;
+                height: 100%;
+                margin: auto;
+                width: 100%;
+            }
+        }
     }
     .mobile-header {
         display: none;
@@ -51,6 +66,9 @@
         }
         .blog-body {
             width: 100%;
+            .blog-header {
+
+            }
         }
         .mobile-header {
             display: block !important;
