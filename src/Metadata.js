@@ -15,10 +15,10 @@ export const PREVIEW_FEED = [
         'link': 'sts'
     },
     {
-        'title': 'Battle Arena Prototype',
+        'title': 'Battle Arena - Static Offsets Edition',
         'subtitle': 'Creating and hooking static offset pointers in memory',
         'desc':  `Explore the world of static offset pointers and join me on the journey of making and breaking a command line battle arena game. Find, hook, and modify memory to seal your fate in the arena.`,
         'img_src': 'placeholder.jpeg',
-        'link': 'sts'
+        'link': 'battle-arena'
     },
 ]

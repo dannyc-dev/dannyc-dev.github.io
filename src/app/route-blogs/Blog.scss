@@ -6,6 +6,15 @@
     box-sizing: border-box;
     font-family: 'Baloo Tammudu 2', cursive;
     // padding: 5px;
+    .slide-enter {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    .slide-enter-active {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: opacity 800ms, transform 400ms;
+    }
     .highlight {
         float: left;
         width: calc(20% - 10px);
@@ -45,7 +54,7 @@
             .blog-header {
                 position: relative;
                 display: block;
-                height: 100%;
+                height: auto;
                 margin: auto;
                 width: 100%;
             }

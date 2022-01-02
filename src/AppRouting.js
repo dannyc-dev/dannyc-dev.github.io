@@ -20,6 +20,7 @@ function AppRouting(props) {
             *  <Route exact path="/example" render={(props) => <Blog {...props} />}/>
             */}
             <Route exact path="/sts" render={(props) => <Blog {...props}/>}/>
+            <Route exact path="/battle-arena" render={(props) => <Blog {...props}/>}/>
 
             <Route component={NotFound} status={404}/>
         </Switch> 

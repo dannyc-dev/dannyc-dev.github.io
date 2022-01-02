@@ -6,17 +6,20 @@ import Socials from '../core/socials/Socials';
 
 // Import componenets
 import StackSmash from './sts/StackSmash';
+import Barena from './barena/Barena';
 
 import './Blog.scss';
 
 // Map components
 let MAP ={
-    '/sts': StackSmash
+    '/sts': StackSmash,
+    '/battle-arena': Barena,
 }
 
 function Blog(props) {
     let Target = MAP[props.location.pathname];
     const [menuToggle, setMenuToggle] = useState(false);
+
     function handleToggle(newValue) {
         setMenuToggle(!newValue);
     }
