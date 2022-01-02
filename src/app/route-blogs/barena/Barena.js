@@ -23,6 +23,16 @@ function Barena(props) {
                 <img className='blog-header' alt='blog header' src={HeaderImage} />
             </div>
             </CSSTransition>
+            <CSSTransition
+                    in={animate}
+                    timeout={300}
+                    classNames="fade"
+                    unmountOnExit
+            >
+            <div className="blog-title">
+            Battle Arena - Static Offsets Edition
+            </div>
+            </CSSTransition>
         </div>
     )
 }

@@ -7,7 +7,7 @@
     font-family: 'Baloo Tammudu 2', cursive;
     .highlight {
         float: left;
-        width: calc(20% - 10px);
+        width: calc(15% - 10px);
         height: 100%;
         padding: 5px;
         border-radius: 25px;
@@ -27,11 +27,11 @@
         }
     }
     .about-feed {
-        width: calc(80% - 10px);
-        padding-left: 5px;
-        padding-right: 5px;
+        width: calc(85% - 10px);
+        padding-left: 10px;
+        padding-right: 10px;
         float: right;
-        padding-top: 10px;
+        padding-top: 15px;
         height: calc(100% - 10px);
         overflow: auto;
         // background: #efeff0;
