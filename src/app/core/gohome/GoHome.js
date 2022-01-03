@@ -29,7 +29,7 @@ function GoHome(props) {
                 classNames="fade"
                 unmountOnExit
             >
-            <img className='home-logo' alt={'Back'} src={HomeLogo} onClick={(e) => {redirect('home');}}/>
+            <img className='home-logo' alt='Back' src={HomeLogo} onClick={(e) => {redirect('home');}}/>
             </CSSTransition>
         </div>
     )

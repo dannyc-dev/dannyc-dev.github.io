@@ -1,0 +1,28 @@
+.container {
+	background-color: white;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Baloo Tammudu 2', cursive;
+	.text-header {
+		background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+		height: 400px;
+		background-position: center;
+		width: 60%;
+		display: block;
+		margin: auto;
+		.text-center {
+			text-align: center;
+			font-size: 60px;
+		}
+	}
+	.content-box {
+		display: block;
+		width: 100%;
+		margin: auto;
+		position: relative;
+		text-align: center;
+		font-size: 25px;
+	}
+}
