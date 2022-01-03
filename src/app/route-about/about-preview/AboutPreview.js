@@ -31,7 +31,8 @@ function AboutPreview(props) {
                     <div>Previously @ Capital One.</div>
                     <div>Virginia Tech Grad ~Go Hokies~</div>
                     <div className="header">Contact:</div>
-                    <div> </div>
+                    <div>For business inquiries, please reach me at: </div>
+                    <div>dannyc.dev@gmail.com</div>
                 </div>
             </CSSTransition>
         </div>
