@@ -30,6 +30,8 @@ function AboutPreview(props) {
                     <div>Software Engineer @ Rapid7. Building out the next generation of enterprise cloud security products.</div>
                     <div>Previously @ Capital One.</div>
                     <div>Virginia Tech Grad ~Go Hokies~</div>
+                    <div className="header">Contact:</div>
+                    <div> </div>
                 </div>
             </CSSTransition>
         </div>

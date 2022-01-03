@@ -1,5 +1,12 @@
 .home-container {
     height: 40px;
+    position: sticky;
+    width: 100%;
+    position: -webkit-sticky;
+    z-index: 100;
+    display: block;
+    top: 0;
+    background: white;
     .fade-enter {
         opacity: 0;
     }
