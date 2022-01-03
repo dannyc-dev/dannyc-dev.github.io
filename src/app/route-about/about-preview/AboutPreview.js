@@ -28,7 +28,7 @@ function AboutPreview(props) {
                 <div className="about-me">
                     <div className="header">About Me:</div>
                     <div>Software Engineer @ Rapid7. Building out the next generation of enterprise cloud security products.</div>
-                    <div>Previously @ Capital One.</div>
+                    <div>Previously building cool things @ Capital One.</div>
                     <div>Virginia Tech Grad ~Go Hokies~</div>
                     <div className="header">Contact:</div>
                     <div>For business inquiries, please reach me at: </div>
