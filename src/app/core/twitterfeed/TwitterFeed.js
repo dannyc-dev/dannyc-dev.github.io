@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation, useHistory } from 'react-router-dom'
 import { ReactComponent as InfoIcon } from '../../../assets/superhero.svg';
 import { ReactComponent as BlogIcon } from '../../../assets/content.svg';
-import { ReactComponent as ContactIcon } from '../../../assets/plane.svg';
+// import { ReactComponent as ContactIcon } from '../../../assets/plane.svg';
 import { ReactComponent as HomeIcon } from '../../../assets/house.svg';
 import { ReactComponent as CloseIcon } from '../../../assets/cancel.svg';
 import  SwipeUp from '../../../assets/arrows.png';
@@ -79,7 +79,7 @@ function TwitterFeed(props) {
             <div className="twitter-embed">
                 {props.isMobile && 
                     <div className="swipe-up" onClick={(e) => {close_menu(e)}}>
-                        <img className='swipey' src={ SwipeUp } />
+                        <img className='swipey' alt='swipe up' src={ SwipeUp } />
                     </div>
                 }
                 {/* <a
