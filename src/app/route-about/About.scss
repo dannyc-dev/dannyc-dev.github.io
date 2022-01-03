@@ -80,11 +80,16 @@
             width: 100%;
             float: none;
             margin: auto;
+            position: static;
             display: block;
+            padding: 0px;
             height: calc(100% - 125px);
             box-sizing: border-box;
             -webkit-overflow-scrolling: touch;
             overscroll-behavior: none;
         }
+    }
+    .no-scroll {
+        overscroll-behavior: none;
     }
 }

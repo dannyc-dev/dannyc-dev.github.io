@@ -14,7 +14,7 @@ function About() {
     }
     return (
         <div className="about-page">
-            <div className="mobile-header">
+            <div className="mobile-header no-scroll">
                 <Logo />
                 <Socials toggle={menuToggle} onChange={handleToggle}/>
                 <CSSTransition
