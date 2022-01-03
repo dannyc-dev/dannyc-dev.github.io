@@ -27,9 +27,9 @@ function AboutPreview(props) {
                 unmountOnExit>
                 <div className="about-me">
                     <div className="header">About Me:</div>
-                    <div>Software Engineer @ Rapid7. Building out the next generation of enterprise cloud security products.</div>
-                    <div>Previously building cool things @ Capital One.</div>
-                    <div>Virginia Tech Grad ~Go Hokies~</div>
+                    <div>Software Engineer @ Rapid7. Building out the next generation of cloud security products.</div>
+                    <div>Previously building things @ Capital One.</div>
+                    <div>Virginia Tech grad. ~Go Hokies~</div>
                     <div className="header">Contact:</div>
                     <div>For business inquiries, please reach me at: </div>
                     <div>dannyc.dev@gmail.com</div>
