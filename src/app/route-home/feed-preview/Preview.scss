@@ -18,6 +18,11 @@
             font-size: 30px;
             font-family: "Inter", sans-serif;
             padding-bottom: 10px;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+                text-decoration-thickness: 2px;
+            }
         }
         .preview-subtitle {
             font-size: 18px;
@@ -36,6 +41,7 @@
             align-items: center;
             margin: auto;
             width: 100%;
+            cursor: pointer;
         }
     }
 }
