@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive';
 import { CSSTransition } from 'react-transition-group';
 import './Preview.scss';
 
 function Preview(props) {
+    let history = useHistory();
     const [animate, setAnimate] = useState(false);
     useEffect(() => {
         setAnimate(true);
@@ -46,7 +48,7 @@ function Preview(props) {
                     </div>
                 </div>
                 <div className="preview-container-right">
-                    <img alt="Not Found" src={require(`./assets/${props.img_src}`)} />
+                    <img alt="Not Found" src={require(`./assets/${props.img_src}`)} onClick={(e) => {history.push(props.link);}}/>
                 </div>
             </>}
         </div>
