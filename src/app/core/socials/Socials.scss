@@ -36,7 +36,7 @@ ul li div {
 }
 
 .menu-anchor {
-    padding-left: 1px;
+    padding: 0px 1px 0px 1px;
     height: 70%;
     min-height: 20px;
     background-color: #fff;
@@ -44,7 +44,6 @@ ul li div {
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-    border: 1px solid #fff;
 }
 
 ul li a .icon {
@@ -59,8 +58,7 @@ ul li a .icon {
 
 ul li div .menu {
     position: relative;
-    padding: 2px;
-    padding-top: 4px;
+    padding: 4px 1px 0px 1px;
     color: #0c0c0b;
     transition: .5s;
     z-index: 1;
