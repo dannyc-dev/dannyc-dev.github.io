@@ -3,6 +3,7 @@ import Logo from '../core/logo/Logo';
 import { CSSTransition } from 'react-transition-group';
 import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
+import { useMediaQuery } from 'react-responsive';
 
 // Import componenets
 import StackSmash from './sts/StackSmash';
@@ -24,11 +25,15 @@ function Blog(props) {
         setMenuToggle(!newValue);
     }
 
+    const isMobileDevice = useMediaQuery({
+        query: '(max-device-width: 480px)'
+    })
+
     return (
         <div className='blog-page'>
             <div className="mobile-header">
                 <Logo />
-                <Socials toggle={menuToggle} onChange={handleToggle}/>
+                <Socials toggle={menuToggle} onChange={handleToggle} isMobile={isMobileDevice}/>
                 <CSSTransition
                     in={menuToggle}
                     timeout={300}

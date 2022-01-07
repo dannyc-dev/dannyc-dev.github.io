@@ -5,18 +5,23 @@ import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
 import AboutPreview from './about-preview/AboutPreview';
 import GoHome from '../core/gohome/GoHome';
+import { useMediaQuery } from 'react-responsive';
 import './About.scss';
 
-function About() {
+function About(props) {
     const [menuToggle, setMenuToggle] = useState(false);
     function handleToggle(newValue) {
         setMenuToggle(!newValue);
     }
+
+    const isMobileDevice = useMediaQuery({
+        query: '(max-device-width: 480px)'
+    })
     return (
         <div className="about-page">
             <div className="mobile-header no-scroll">
                 <Logo />
-                <Socials toggle={menuToggle} onChange={handleToggle}/>
+                <Socials toggle={menuToggle} onChange={handleToggle} isMobile={isMobileDevice}/>
                 <CSSTransition
                     in={menuToggle}
                     timeout={300}

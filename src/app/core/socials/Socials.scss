@@ -196,41 +196,53 @@ ul li:nth-child(5) a:before{
 }
 
 @media screen and (max-width: 480px) {
-    ul {
-        justify-content: flex-end;
-    }
-
-    ul li a {
-        height: 60%;
-    }
-
-    ul li div .menu {
-        height: 20px;
-    }
-
-    ul li a .icon {
-        height: 22px;
-    }
-
-    a:hover .twitter{
-        padding-top: 6px !important;
-        height: 18px !important;
-    }
+    .social-bar-container {
+        display: flex;
+        .socials-container {
+            flex: 1;
+        }
+        .social-mobile-home {
+            flex: 1;
+        }
+        ul {
+            justify-content: flex-end;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+        }
     
-    a:hover .linkedin{
-        padding-top: 6px !important;
-        height: 18px !important;
-    }
+        ul li a {
+            height: 60%;
+        }
     
-    a:hover .twitch {
-        padding-top: 6px !important;
-        height: 18px !important;
-    }
-
-    .menu-anchor {
-        height: 60%;
-        padding-right: 2px;
-        padding-left: 2px;
-        padding-top: 1px;
+        ul li div .menu {
+            height: 20px;
+        }
+    
+        ul li a .icon {
+            height: 22px;
+        }
+    
+        a:hover .twitter{
+            padding-top: 6px !important;
+            height: 18px !important;
+        }
+        
+        a:hover .linkedin{
+            padding-top: 6px !important;
+            height: 18px !important;
+        }
+        
+        a:hover .twitch {
+            padding-top: 6px !important;
+            height: 18px !important;
+        }
+    
+        .menu-anchor {
+            height: 60%;
+            padding-right: 2px;
+            padding-left: 2px;
+            padding-top: 1px;
+        }
+        
     }
 }
