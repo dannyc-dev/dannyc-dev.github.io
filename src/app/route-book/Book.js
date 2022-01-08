@@ -4,15 +4,15 @@ import { CSSTransition } from 'react-transition-group';
 import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
 import Construction from '../core/construction/Construction';
-import './Contact.scss';
+import './Book.scss';
 
-function Contact(props) {
+function Book(props) {
     const [menuToggle, setMenuToggle] = useState(false);
     function handleToggle(newValue) {
         setMenuToggle(!newValue);
     }
     return (
-        <div className="contact-page">
+        <div className="book-page">
             <div className="mobile-header">
                 <Logo />
                 <Socials toggle={menuToggle} onChange={handleToggle}/>
@@ -42,7 +42,7 @@ function Contact(props) {
                 
                 {!menuToggle && <span className="footer" role="img" aria-label="heart">Made with ❤️ by <a target="_blank" rel="noopener noreferrer" href="https://github.com/dannyc-dev/dannyc-dev.github.io">dannyc</a></span>}
             </div>
-            <div className="contact-feed" >
+            <div className="book-feed" >
                 <div className="under-construction-container">
                     <Construction />
                 </div>
@@ -51,4 +51,4 @@ function Contact(props) {
     )
 }
 
-export default Contact;
+export default Book;

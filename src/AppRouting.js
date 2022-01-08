@@ -3,7 +3,7 @@ import { Route, Switch, withRouter, Redirect } from "react-router-dom";
 import Home from "./app/route-home/Home";
 import About from "./app/route-about/About";
 import Blog from "./app/route-blogs/Blog";
-import Contact from "./app/route-contact/Contact";
+import Book from "./app/route-book/Book";
 import NotFound from "./app/core/notfound/NotFound";
 
 function AppRouting(props) {
@@ -14,7 +14,7 @@ function AppRouting(props) {
             </Route>
             <Route exact path="/" render={() => <Home />}/>
             <Route exact path="/about" render={() => <About />}/>
-            <Route exact path="/contact" render={() => <Contact />}/>
+            <Route exact path="/book" render={() => <Book />}/>
             {/* Add custom path for new posts
             * Ex.
             *  <Route exact path="/example" render={(props) => <Blog {...props} />}/>

@@ -47,7 +47,7 @@
         height: 100vh;  
         max-height: -webkit-fill-available;
         overflow: hidden;
-        padding: 10px;
+        padding: 10px 10px 0px 10px;
         .highlight {
             display: none;
         }
@@ -84,7 +84,7 @@
             margin: auto;
             position: relative;
             display: block;
-            padding: 0px;
+            padding: 20px 0px 0px 0px;
             height: calc(100% - 125px);
             box-sizing: border-box;
             -webkit-overflow-scrolling: touch;
