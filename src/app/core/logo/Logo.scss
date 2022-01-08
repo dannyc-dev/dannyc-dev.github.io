@@ -2,13 +2,14 @@
     display: block;
     font-family: 'Baloo Tammudu 2', cursive;
     box-sizing: border-box;
-    font-size: 4vw;
+    font-size: 4vmax;
+    white-space: nowrap;
     overflow: hidden;
     width: 100%;
     margin: auto;
     height: 90px;
     cursor: pointer;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 }
 
 #period {
@@ -19,7 +20,7 @@
     // -webkit-transition: -webkit-transform .65s;
     // -moz-transition: -moz-transform .65s;
     // transition: transform .65s;
-    animation-name: wiggleWiggle;
+    // animation-name: wiggleWiggle;
     animation-iteration-count: 0;
     animation-duration: .40s;
     cursor: pointer;
