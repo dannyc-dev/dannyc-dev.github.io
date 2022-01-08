@@ -1,0 +1,13 @@
+.blog-body {
+    .barena-header {
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blog-body {
+        .barena-header {
+            width: 100% !important;
+        }
+    }
+}

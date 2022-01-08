@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import GoHome from '../../core/gohome/GoHome';
 import { CSSTransition } from 'react-transition-group';
 import HeaderImage from '../../../assets/staticoffsetheader.svg';
+import PreviewGif from './assets/preview.gif';
 
 import './Barena.scss';
 
@@ -20,7 +21,7 @@ function Barena(props) {
                     unmountOnExit
             >
             <div className="blog-header-container">
-                <img className='blog-header' alt='blog header' src={HeaderImage} />
+                <img className='blog-header barena-header' alt='blog header' src={PreviewGif} />
             </div>
             </CSSTransition>
             <CSSTransition
