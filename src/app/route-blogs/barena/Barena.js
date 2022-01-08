@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import GoHome from '../../core/gohome/GoHome';
 import { CSSTransition } from 'react-transition-group';
 import HeaderImage from '../../../assets/staticoffsetheader.svg';
-import PreviewGif from './assets/preview.gif';
+import PreviewGif from './assets/preview_full.gif';
 
 import './Barena.scss';
 
