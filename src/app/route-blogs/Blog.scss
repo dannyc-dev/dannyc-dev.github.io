@@ -62,14 +62,14 @@
             width: 100%;
             overflow: hidden;
             height: auto;
-            padding: 20px;
+            padding: 10px 0px 10px 10px;
             box-sizing: border-box;
             .blog-image {
                 position: relative;
                 display: block;
                 height: auto;
                 margin: auto;
-                width: 80%;
+                width: 90%;
             }
         }
         .blog-title {
@@ -83,7 +83,7 @@
             width: 100%;
             overflow: hidden;
             height: auto;
-            padding: 20px;
+            padding: 10px 0px 10px 10px;
             box-sizing: border-box;
             .blog-header {
                 position: relative;
@@ -116,6 +116,7 @@
             }
             .blog-title {
                 padding-left: 0px;
+                font-size: 25px;
             }
             .blog-p {
                 padding-left: 0px;
