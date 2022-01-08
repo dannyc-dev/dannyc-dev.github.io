@@ -8,6 +8,8 @@
 }
 ul {
     display: flex;
+    overflow: auto;
+    scrollbar-width: none;
     // justify-content: flex-end;
     padding-inline-start: 0px;
     width: 100%;
@@ -15,6 +17,9 @@ ul {
     margin-block-end: 10px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+ul::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 ul li {
     list-style: none;

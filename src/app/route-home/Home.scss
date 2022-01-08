@@ -50,6 +50,16 @@
     }
 }
 
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    .home-page {
+        .highlight {
+            .footer {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 480px) {
     .home-page {
         height: 100vh;  
