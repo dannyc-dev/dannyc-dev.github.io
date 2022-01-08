@@ -21,7 +21,7 @@ function Barena(props) {
                     unmountOnExit
             >
             <div className="blog-header-container">
-                <img className='blog-header barena-header' alt='blog header' src={PreviewGif} />
+                <img className='blog-header' alt='blog header' src={HeaderImage} />
             </div>
             </CSSTransition>
             <CSSTransition
@@ -34,6 +34,12 @@ function Barena(props) {
             Battle Arena - Static Offsets Edition
             </div>
             </CSSTransition>
+            <div className="blog-p">
+                Test
+            </div>
+            <div className="blog-image-container">
+                <img className="blog-image" src={PreviewGif}/>
+            </div>
         </div>
     )
 }
