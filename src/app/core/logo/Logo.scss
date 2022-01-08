@@ -3,9 +3,10 @@
     font-family: 'Baloo Tammudu 2', cursive;
     box-sizing: border-box;
     font-size: 4vw;
+    overflow: hidden;
     width: 100%;
     margin: auto;
-    height: 10vh;
+    height: 90px;
     cursor: pointer;
     margin-bottom: 30px;
 }
@@ -68,6 +69,12 @@
     }
     90%, 100% {
         transform: rotateY(360deg);
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    .logo-container {
+        height: 50px;
     }
 }
 
