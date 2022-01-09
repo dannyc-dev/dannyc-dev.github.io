@@ -11,7 +11,7 @@ export const PREVIEW_FEED = [
      {
         'title': 'Hooks, hooks, and more hooks',
         'subtitle': 'Taking our trainer internal: trying out process injection, api hooking, and detours.',
-        'desc': `Exploring ways of getting direct access to battle arena's memory by taking our trainer internal. Looking at different ways to read and write to process memory from the inside. Coming sooon!`,
+        'desc': `Exploring ways of getting direct access to battle arena's memory by taking our trainer internal. Looking at different ways to read and write to process memory from the inside. Coming soon!`,
         'img_src': 'placeholder.jpeg',
         'link': 'battle-arena-2',
         'img_info': null,
