@@ -1,11 +1,11 @@
 .preview-container {
-    padding: 30px;
+    padding: 20px;
     background: white;
     border-radius: 5px;
     min-height: 175px;
     font-family: 'Baloo Thambi 2', cursive;
     font-weight: 500;
-    overflow: auto;
+    overflow: hidden;
     &:last-child {
         border-bottom: none;
     }
