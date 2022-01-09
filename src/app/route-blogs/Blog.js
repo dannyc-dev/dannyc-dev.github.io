@@ -6,14 +6,14 @@ import Socials from '../core/socials/Socials';
 import { useMediaQuery } from 'react-responsive';
 
 // Import componenets
-import StackSmash from './sts/StackSmash';
+import BarenaTwo from './barena2/BarenaTwo';
 import Barena from './barena/Barena';
 
 import './Blog.scss';
 
 // Map components
 let MAP ={
-    '/sts': StackSmash,
+    '/battle-arena-2': BarenaTwo,
     '/battle-arena': Barena,
 }
 

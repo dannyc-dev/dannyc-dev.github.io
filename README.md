@@ -3,7 +3,7 @@
 
 Project: [https://dannyc.io](https://dannyc.io)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and deployed via Github Actions to GH Pages.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and deployed via Github Actions and served via Cloudfront CDN (Content Delivery Network) + AWS S3.
 
 #### Adding an entry
 

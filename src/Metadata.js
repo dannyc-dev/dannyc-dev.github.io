@@ -9,17 +9,17 @@ export const PREVIEW_FEED = [
      * 'img_info': '[Optional] Image preview info'
      */
      {
-        'title': 'DirectX Model Development',
-        'subtitle': 'Using Visual Studio 3D pipeline explore DirectX model development',
-        'desc': `Using Visual Studio 3D pipeline explore DirectX model development`,
+        'title': 'Hooks, hooks, and more hooks',
+        'subtitle': 'Taking our trainer internal: trying out process injection, api hooking, and detours.',
+        'desc': `Exploring ways of getting direct access to battle arena's memory by taking our trainer internal. Looking at different ways to read and write to process memory from the inside. Coming sooon!`,
         'img_src': 'placeholder.jpeg',
-        'link': 'sts',
+        'link': 'battle-arena-2',
         'img_info': null,
     },
     {
-        'title': 'Battle Arena - Static Offsets Edition',
-        'subtitle': 'Creating and hooking static offset pointers in memory',
-        'desc':  `Explore the world of static offset pointers and join me on the journey of making and breaking a command line battle arena game. Find, hook, and modify memory to seal your fate in the arena.`,
+        'title': 'Kicking it old school',
+        'subtitle': 'Making an external trainer to cheat in our own game.',
+        'desc':  `I explored static access pointers by building out a spimple turn based command-line battle game. Reverse engineer, scan for byte patterns, and read+write to process memory to control our fate in game.`,
         'img_src': 'memory_preview.png',
         'link': 'battle-arena',
         'img_info': 'This is a snapshot of the graphical memory viewer of the Battle Arena Game by Cheat Engine.',

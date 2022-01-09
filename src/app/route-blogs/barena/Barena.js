@@ -24,7 +24,7 @@ function Barena(props) {
             <div className="blog-header-container">
                 <img className='blog-header' alt='blog header' src={HeaderImage} />
                 {!props.isMobile && 
-                    <ImageInfo info={'My girlfriend (a designer) made this when I explained what I was working on. I thought it was such a cool and abstract representation of memory that I needed to include it in my post. :)'}/>
+                    <ImageInfo info={'My girlfriend (a designer) made this when I explained what I was working on. I thought it was such a cool and abstract representation of memory that I needed to include it in my post =)'}/>
                 }
             </div>
             </CSSTransition>
