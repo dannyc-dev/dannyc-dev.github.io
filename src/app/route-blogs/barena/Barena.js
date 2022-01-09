@@ -3,7 +3,7 @@ import GoHome from '../../core/gohome/GoHome';
 import { CSSTransition } from 'react-transition-group';
 import HeaderImage from '../../../assets/staticoffsetheader.svg';
 import PreviewGif from './assets/preview_full.gif';
-import ImageInfo from '../../core/imageinfo/ImageInfo';
+import { ImageInfo } from '../../core/imageinfo/ImageInfo';
 
 import './Barena.scss';
 
@@ -24,7 +24,7 @@ function Barena(props) {
             <div className="blog-header-container">
                 <img className='blog-header' alt='blog header' src={HeaderImage} />
                 {!props.isMobile && 
-                    <ImageInfo info={'My girlfriend (a designer) made this when I explained what I was working on. I thought it was such a cool and abstract representation of memory that I needed to include it in my post. Enjoy :)'}/>
+                    <ImageInfo info={'My girlfriend (a designer) made this when I explained what I was working on. I thought it was such a cool and abstract representation of memory that I needed to include it in my post. :)'}/>
                 }
             </div>
             </CSSTransition>

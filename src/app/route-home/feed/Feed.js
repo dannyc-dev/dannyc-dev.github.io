@@ -16,6 +16,7 @@ function Feed(props) {
                             img_src={article.img_src}
                             link={article.link} 
                             subtitle={article.subtitle}
+                            img_info={article.img_info}
                          />
                         <div className="divider"></div>
                     </React.Fragment>
@@ -29,6 +30,7 @@ function Feed(props) {
                         key={index} 
                         link={article.link} 
                         subtitle={article.subtitle}
+                        img_info={article.img_info}
                     />
                 )
             }

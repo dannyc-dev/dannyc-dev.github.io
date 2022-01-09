@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive';
 import { CSSTransition } from 'react-transition-group';
 import './Preview.scss';
+import { ImageInfoSmall } from '../../core/imageinfo/ImageInfo';
 
 function Preview(props) {
     let history = useHistory();
@@ -49,6 +50,9 @@ function Preview(props) {
                 </div>
                 <div className="preview-container-right">
                     <img alt="Not Found" src={require(`./assets/${props.img_src}`)} onClick={(e) => {history.push(props.link);}}/>
+                    {props.img_info &&
+                        <ImageInfoSmall info={props.img_info} />
+                    }
                 </div>
             </>}
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import Info from '../../../assets/info.svg';
 import './Imageinfo.scss';
 
-function ImageInfo(props) {
+export function ImageInfo(props) {
     return (
         <div className="image-info-container">
             <img className='image-info' alt="info" src={Info} />
@@ -11,4 +11,11 @@ function ImageInfo(props) {
     );
 }
 
-export default ImageInfo;
+export function ImageInfoSmall(props) {
+    return (
+        <div className="image-info-container-small">
+            <img className='image-info-small' alt="info" src={Info} />
+            <span className='tooltip-small'>{props.info}</span>
+        </div>
+    );
+}
