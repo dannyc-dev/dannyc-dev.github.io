@@ -3,6 +3,7 @@ import GoHome from '../../core/gohome/GoHome';
 import { CSSTransition } from 'react-transition-group';
 import HeaderImage from '../../../assets/staticoffsetheader.svg';
 import PreviewGif from './assets/preview_full.gif';
+import ImageInfo from '../../core/imageinfo/ImageInfo';
 
 import './Barena.scss';
 
@@ -22,6 +23,9 @@ function Barena(props) {
             >
             <div className="blog-header-container">
                 <img className='blog-header' alt='blog header' src={HeaderImage} />
+                {!props.isMobile && 
+                    <ImageInfo info={'My girlfriend (a designer) made this when I explained what I was working on. I thought it was such a cool and abstract representation of memory that I needed to include it in my post. Enjoy :)'}/>
+                }
             </div>
             </CSSTransition>
             <CSSTransition
@@ -35,10 +39,10 @@ function Barena(props) {
             </div>
             </CSSTransition>
             <div className="blog-p">
-                Test
+            Test
             </div>
             <div className="blog-image-container">
-                <img className="blog-image" src={PreviewGif}/>
+                <img className="blog-image-l" alt="preview" src={PreviewGif}/>
             </div>
         </div>
     )

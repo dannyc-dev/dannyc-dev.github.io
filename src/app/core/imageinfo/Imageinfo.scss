@@ -1,0 +1,30 @@
+.image-info-container {
+    position: absolute !important;
+    bottom: 0px !important;
+    left: 20px !important;
+    width: 20px !important;
+    .image-info {
+        width: 20px !important;
+    }
+    
+    .tooltip {
+        visibility: hidden !important;
+        box-sizing: border-box;
+        width: 400px !important;
+        height: 200px !important;
+        background-color: white;
+        color: black;
+        text-align: center;
+        border-radius: 6px;
+        padding: 20px;
+        position: absolute;
+        bottom: 20px;
+        left: 25px;
+        z-index: 1;
+    }
+    &:hover {
+        .tooltip {
+            visibility: visible !important;
+        }
+    }
+}
