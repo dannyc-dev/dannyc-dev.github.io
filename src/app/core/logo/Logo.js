@@ -20,7 +20,7 @@ function Logo(props) {
     }, []);
 
     return (
-        <div className={'logo-container'} onClick={handleOnSubmit}>
+        <div className='logo-container' onClick={handleOnSubmit}>
             <div className={"d"} id={class_name}>d</div>
             <div className={"a"} id={class_name}>a</div>
             <div className={"n"} id={class_name}>n</div>
