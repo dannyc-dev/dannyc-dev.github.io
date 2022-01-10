@@ -14,7 +14,7 @@ function AppRouting(props) {
             </Route>
             <Route exact path="/" render={() => <Home />}/>
             <Route exact path="/about" render={() => <About />}/>
-            <Route exact path="/book" render={() => <Book />}/>
+            <Route exact path="/books" render={() => <Book />}/>
             {/* Add custom path for new posts
             * Ex.
             *  <Route exact path="/example" render={(props) => <Blog {...props} />}/>

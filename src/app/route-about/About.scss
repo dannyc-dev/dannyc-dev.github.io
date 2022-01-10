@@ -50,6 +50,7 @@
         max-height: -webkit-fill-available;
         overflow: hidden;
         padding: 10px 10px 0px 10px;
+        z-index: 1;
         .highlight {
             display: none;
         }
@@ -87,7 +88,7 @@
             position: relative;
             display: block;
             padding: 20px 0px 0px 0px;
-            height: calc(100% - 125px);
+            height: calc(100% - 100px);
             box-sizing: border-box;
             -webkit-overflow-scrolling: touch;
             overscroll-behavior: none;

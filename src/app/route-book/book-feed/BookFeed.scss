@@ -1,4 +1,4 @@
-.feed-container {
+.book-container {
     width: 90%;
     padding-left: 0px;
     padding-right: 5px;
@@ -18,7 +18,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .feed-container {
+    .book-container {
         width: 100%;
         float: none;
         margin: auto;

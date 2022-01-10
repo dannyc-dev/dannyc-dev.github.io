@@ -50,6 +50,7 @@
         max-height: -webkit-fill-available;
         overflow: hidden;
         padding: 10px 10px 0px 10px;
+        z-index: 1;
         .highlight {
             display: none;
         }
@@ -59,6 +60,7 @@
             width: 100%;
             position: sticky;
             position: -webkit-sticky;
+            z-index: 1;
             .alert-mobile-enter {
                 opacity: 0;
                 // transform: scale(0.9);

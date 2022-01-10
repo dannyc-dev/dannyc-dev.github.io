@@ -1,10 +1,10 @@
 .socials-container {
     display: block;
-    width: 100%;
+    width: 95%;
     height: 30px;
-    // margin-top: 10px;
+    margin: auto;
+    position: relative;
     box-sizing: border-box;
-    padding-left: 1px;
 }
 ul {
     display: flex;
@@ -42,13 +42,13 @@ ul li div {
 }
 
 .menu-anchor {
-    height: 70%;
-    min-height: 20px;
+    height: 20px;
+    float: left;
     background-color: #fff;
     display: block;
-    border-radius: 50%;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 ul li a .icon {
@@ -61,12 +61,12 @@ ul li a .icon {
     height: 17px;
 }
 
-ul li div .menu {
+div .menu {
     position: relative;
     color: #0c0c0b;
     transition: .5s;
     z-index: 1;
-    height: 17px;
+    height: 18px;
 }
 
 ul li a:hover .icon {
@@ -79,14 +79,14 @@ ul li a:hover .icon {
 //     transform: rotateY(180deg);
 // }
 
-ul li .menu-animate {
+.menu-animate {
     animation-name: wobble;
     animation-iteration-count: 1;
     animation-duration: 1.1s;
     // animation-delay: 0.5s;
 }
 
-ul li .menu-animate-back {
+.menu-animate-back {
     animation-name: wobbleBack;
     animation-iteration-count: 1;
     animation-duration: 1.1s;
@@ -94,13 +94,13 @@ ul li .menu-animate-back {
 
 @keyframes wobble {
     25% {
-      transform: rotate(15deg);
+      transform: rotate(10deg);
     }
     50% {
-      transform: rotate(-15deg);
+      transform: rotate(-10deg);
     }
     75% {
-      transform: rotate(15deg);
+      transform: rotate(10deg);
     }
     100% {
       transform: rotate(0deg);
@@ -109,13 +109,13 @@ ul li .menu-animate-back {
 
 @keyframes wobbleBack {
     25% {
-      transform: rotate(15deg);
+      transform: rotate(10deg);
     }
     50% {
-      transform: rotate(-15deg);
+      transform: rotate(-10deg);
     }
     75% {
-      transform: rotate(15deg);
+      transform: rotate(10deg);
     }
     100% {
       transform: rotate(0deg);
@@ -218,8 +218,8 @@ a:hover .twitch {
             height: 60%;
         }
     
-        ul li div .menu {
-            height: 20px;
+        div .menu {
+            height: 25px;
         }
     
         ul li a .icon {
@@ -242,11 +242,11 @@ a:hover .twitch {
         }
     
         .menu-anchor {
-            height: 60%;
-            padding-right: 2px;
-            padding-left: 2px;
-            padding-top: 1px;
+            height: 20px;
+            float: right;
+            background: transparent;
+            padding-right: 5px;
+            padding-left: 5px;
         }
-        
     }
 }
