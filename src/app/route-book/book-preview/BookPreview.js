@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive';
 import { CSSTransition } from 'react-transition-group';
