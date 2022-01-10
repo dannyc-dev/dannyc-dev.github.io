@@ -11,6 +11,7 @@
     cursor: pointer;
     line-height: 1;
     padding-top: 20px;
+    padding-left: 2px;
 }
 
 #period {
@@ -83,7 +84,7 @@
 
 @media screen and (max-width: 480px) {
     .logo-container {
-        font-size: 50px;
+        font-size: 45px;
         height: 65px;
         padding-top: 15px;
     }
