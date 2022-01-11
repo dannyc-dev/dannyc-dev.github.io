@@ -22,7 +22,6 @@
             align-items: center;
             margin: auto;
             width: 45%;
-            cursor: pointer;
         }
     }
     .book-preview-container-right {
@@ -35,11 +34,6 @@
             font-size: 30px;
             font-family: "Inter", sans-serif;
             padding-bottom: 10px;
-            cursor: pointer;
-            &:hover {
-                text-decoration: underline;
-                text-decoration-thickness: 2px;
-            }
         }
         .book-preview-subtitle {
             font-size: 18px;
@@ -73,7 +67,6 @@
 
 @media screen and (max-width: 480px) {
     .book-preview-container {
-        padding: 20px 0px 0px 0px;
         overflow: hidden;
         box-sizing: border-box;
         .book-preview-container-top {
@@ -86,7 +79,8 @@
                 display: flex;
                 justify-content: center; 
                 align-items: center;
-                width: 100%;
+                width: 90%;
+                margin: auto;
             }
         }
         .book-preview-container-bot {

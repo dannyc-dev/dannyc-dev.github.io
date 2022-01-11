@@ -8,6 +8,27 @@
     overflow: auto;
     box-sizing: border-box;
     // background: #efeff0;
+    .book-intro-container {
+        display: block;
+        width: 100%;
+        float: left;
+        font-family: "Inter", sans-serif;
+        padding-bottom: 15px;
+        .book-intro-title {
+            padding: 5px;
+            padding-bottom: 15px;
+            font-size: 26px;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+        }
+        .book-intro-body {
+            width: 80%;
+            margin: auto;
+            font-size: 18px;
+        }
+
+    }
 }
 .divider {
     position: relative;
@@ -29,5 +50,13 @@
         box-sizing: border-box;
         -webkit-overflow-scrolling: touch;
         overscroll-behavior: none;
+        .book-intro-container {
+            .book-intro-body {
+                width: 95%;
+                margin: auto;
+                font-size: 16px;
+            }
+    
+        }
     }
 }

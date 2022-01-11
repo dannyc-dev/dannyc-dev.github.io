@@ -50,7 +50,7 @@ function Book(props) {
                     {!menuToggle && <span className="footer" role="img" aria-label="heart">Made with ❤️ by <a target="_blank" rel="noopener noreferrer" href="https://github.com/dannyc-dev/dannyc-dev.github.io">dannyc</a></span>}
                 </div>
             }
-            <BookFeed />
+            <BookFeed isMobile={isMobileDevice}/>
         </div>
     )
 }

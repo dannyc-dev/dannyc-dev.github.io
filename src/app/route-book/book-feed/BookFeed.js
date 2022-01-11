@@ -42,6 +42,10 @@ function BookFeed(props) {
     return (
         <div className={'book-container'}>
             <GoHome />
+            <div className="book-intro-container">
+                <div className="book-intro-title">My Bookshelf</div>
+                <div className="book-intro-body">Keeping track of interesting reads throughout the year. I mainly read comic books, tech books, and non-fiction but I've been known to dabble around.</div>
+            </div>
             {feed()}
         </div>
     )
