@@ -25,7 +25,7 @@ function BookPreview(props) {
         <div className="book-preview-container">
             {isMobileDevice && <>
                 <div className="book-preview-container-top">
-                    <img alt="Not Found" src={require(`./assets/${props.img_src}`)} onClick={(e) => {}}/>
+                    <img alt="Not Found" src={`${props.img_src}`} onClick={(e) => {}}/>
                 </div>
                 <div className="book-preview-container-bot">
                     <div className="book-preview-title" onClick={(e) => {}}>{props.title}</div>
@@ -39,7 +39,7 @@ function BookPreview(props) {
             </>}
             {!isMobileDevice && <>
                 <div className="book-preview-container-left">
-                    <img alt="Not Found" src={require(`./assets/${props.img_src}`)} onClick={(e) => {history.push(props.link);}}/>
+                    <img alt="Not Found" src={`${props.img_src}`} onClick={(e) => {history.push(props.link);}}/>
                         {props.img_info &&
                             <ImageInfoSmall info={props.img_info} />
                         }
@@ -47,6 +47,7 @@ function BookPreview(props) {
                 <div className="book-preview-container-right">
                     <div className="book-preview-title" onClick={(e) => {history.push(props.link);}}>{props.title}</div>
                     <div className="book-preview-subtitle">{props.subtitle}</div>
+                    <div className="book-preview-body">Rating: {props.rank}</div>
                     <div className="book-preview-body">
                         {props.desc}
                     </div>

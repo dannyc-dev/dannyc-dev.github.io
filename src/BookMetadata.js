@@ -13,7 +13,7 @@ export const BOOK_FEED = [
         'subtitle': 'Test Book Subtitle',
         'rank': '6/10',
         'desc': `Test Book Description`,
-        'img_src': 'placeholder.jpeg',
+        'img_src': 'https://images-na.ssl-images-amazon.com/images/I/91ok9q8rY8L.jpg',
         'img_info': null,
     },
     {
@@ -21,7 +21,7 @@ export const BOOK_FEED = [
         'subtitle': 'Test Book Subtitle',
         'rank': '7/10',
         'desc':  `Test Book Description`,
-        'img_src': 'placeholder.jpeg',
+        'img_src': 'https://images-na.ssl-images-amazon.com/images/I/91ok9q8rY8L.jpg',
         'img_info': 'This is a snapshot of the graphical memory viewer of the Battle Arena Game by Cheat Engine.',
     },
 ]
