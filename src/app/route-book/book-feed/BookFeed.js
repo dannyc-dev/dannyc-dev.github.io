@@ -15,7 +15,6 @@ function BookFeed(props) {
                             title={article.title} 
                             desc={article.desc} 
                             img_src={article.img_src}
-                            rank={article.rank} 
                             subtitle={article.subtitle}
                             img_info={article.img_info}
                          />
@@ -29,7 +28,6 @@ function BookFeed(props) {
                         desc={article.desc} 
                         img_src={article.img_src} 
                         key={index} 
-                        rank={article.rank} 
                         subtitle={article.subtitle}
                         img_info={article.img_info}
                     />
@@ -43,8 +41,8 @@ function BookFeed(props) {
         <div className={'book-container'}>
             <GoHome />
             <div className="book-intro-container">
-                <div className="book-intro-title">My Bookshelf</div>
-                <div className="book-intro-body">Keeping track of interesting reads throughout the year. I mainly read comic books, tech books, and non-fiction but I've been known to dabble around.</div>
+                <div className="book-intro-title">WAYR?</div>
+                <div className="book-intro-body">I mainly read comic books, tech books, and non-fiction but I've been known to dabble around.</div>
             </div>
             {feed()}
         </div>

@@ -1,0 +1,107 @@
+.blogs-page {
+    background-color: white;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Baloo Tammudu 2', cursive;
+    .blog-highlight {
+        float: left;
+        width: 10%;
+        height: 100%;
+        padding: 5px;
+        border-radius: 25px;
+        overflow: hidden;
+        box-sizing: border-box;
+        position: relative;
+        .alert-enter {
+            opacity: 0;
+            // transform: scale(0.9);
+            transform: translateX(-100%);
+        }
+        .alert-enter-active {
+            opacity: 1;
+            transform: translateX(0px);
+            transition: opacity 300ms, transform 300ms;
+        }
+        .alert-exit {
+            opacity: 1;
+        }
+        .alert-exit-active {
+            opacity: 0;
+            // transform: scale(0.9);
+            transform: translateX(-100%);
+            transition: opacity 300ms, transform 300ms;
+        }
+        .footer {
+            font-family: 'Baloo Tammudu 2', cursive;
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            padding-bottom: 10px;
+            padding-left: 0px;
+            box-sizing: border-box;
+            padding-right: 5px;
+            background-color: white;
+        }
+    }
+    .mobile-header {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    .blogs-page {
+        .blog-highlight {
+            .footer {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blogs-page {
+        height: 100vh;  
+        max-height: -webkit-fill-available;
+        overflow: hidden;
+        padding: 10px 10px 0px 10px;
+        z-index: 1;
+        .blog-highlight {
+            display: none;
+        }
+        .mobile-header {
+            display: block !important;
+            text-align: right;
+            width: 100%;
+            position: sticky;
+            position: -webkit-sticky;
+            z-index: 1;
+            .alert-mobile-enter {
+                opacity: 0;
+                // transform: scale(0.9);
+                transform: translateY(-100%);
+            }
+            .alert-mobile-enter-active {
+                opacity: 1;
+                transform: translateX(0px);
+                transition: opacity 300ms, transform 300ms;
+            }
+            .alert-mobile-exit {
+                opacity: 1;
+            }
+            .alert-mobile-exit-active {
+                opacity: 0;
+                // transform: scale(0.9);
+                transform: translateY(-100%);
+                transition: opacity 300ms, transform 300ms;
+            }
+        }
+    }
+    .no-scroll {
+        overscroll-behavior: none;
+    }
+}

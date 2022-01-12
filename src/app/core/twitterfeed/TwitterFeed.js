@@ -67,7 +67,7 @@ function TwitterFeed(props) {
                     <InfoIcon className="info"/>
                     <div className="about">About</div>
                 </div>
-                <div className="menu-item" onClick={(e) => {redirect('home');}}>
+                <div className="menu-item" onClick={(e) => {redirect('blogs');}}>
                     <BlogIcon className="blog"/>
                     <div className="about">Blog</div>
                 </div>

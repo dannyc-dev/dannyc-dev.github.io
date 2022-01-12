@@ -39,7 +39,7 @@ function Feed(props) {
     }
     
     return (
-        <div className={'feed-container'}>
+        <div className='feed-container'>
             {feed()}
         </div>
     )

@@ -7,21 +7,24 @@ export const PREVIEW_FEED = [
      * 'img_src': 'Image preview filename *IMPORTANT* Must be found inside the src/app/route-home/feed-preview/assets/ directory'
      * 'link': 'React router link'
      * 'img_info': '[Optional] Image preview info'
+     * 'exclude': 'Exclude from Blogs - Defaults to showing on blog page'
      */
      {
-        'title': 'Hooks, hooks, and more hooks',
-        'subtitle': 'Taking our trainer internal: trying out process injection, api hooking, and detours.',
-        'desc': `Exploring ways of getting direct access to battle arena's memory by taking our trainer internal. Looking at different ways to read and write to process memory from the inside. Coming soon!`,
+        'title': 'Lorem ipsum dolor sit amet.',
+        'subtitle': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel.',
+        'desc': `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed mauris ultricies, tempor nisl vel, tincidunt ante. Etiam suscipit nisi id faucibus maximus. Nulla porta diam leo, eu bibendum nulla vestibulum ut. Maecenas in bibendum neque. Etiam venenatis leo ut odio porttitor, vel sollicitudin est tincidunt. Suspendisse facilisis justo sit.`,
         'img_src': 'placeholder.jpeg',
         'link': 'battle-arena-2',
         'img_info': null,
+        'exlcude': true
     },
     {
-        'title': 'Kicking it old school',
-        'subtitle': 'Making an external trainer to cheat in our own game.',
-        'desc':  `I explored static access pointers by building out a spimple turn based command-line battle game. Reverse engineer, scan for byte patterns, and read+write to process memory to control our fate in game.`,
+        'title': 'Lorem ipsum dolor sit amet.',
+        'subtitle': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel.',
+        'desc':  `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed mauris ultricies, tempor nisl vel, tincidunt ante. Etiam suscipit nisi id faucibus maximus. Nulla porta diam leo, eu bibendum nulla vestibulum ut. Maecenas in bibendum neque. Etiam venenatis leo ut odio porttitor, vel sollicitudin est tincidunt. Suspendisse facilisis justo sit.`,
         'img_src': 'memory_preview.png',
         'link': 'battle-arena',
         'img_info': 'This is a snapshot of the graphical memory viewer of the Battle Arena Game by Cheat Engine.',
+        'exlcude': false
     },
 ]
