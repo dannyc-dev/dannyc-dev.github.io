@@ -16,7 +16,6 @@
         padding: 5px;
         .blog-preview-title {
             font-size: 30px;
-            font-family: "Inter", sans-serif;
             padding-bottom: 10px;
             cursor: pointer;
             &:hover {
@@ -26,7 +25,6 @@
         }
         .blog-preview-subtitle {
             font-size: 18px;
-            font-family: "Inter", sans-serif;
             padding-bottom: 10px;
         }
     }
@@ -92,7 +90,6 @@
             padding: 10px;
             .blog-preview-title {
                 font-size: 21px;
-                font-family: "Inter", sans-serif;
                 padding-bottom: 10px;
             }
             .blog-preview-body {

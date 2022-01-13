@@ -30,9 +30,9 @@ function BookPreview(props) {
                 <div className="book-preview-container-bot">
                     <div className="book-preview-title" onClick={(e) => {}}>{props.title}</div>
                     <div className="book-preview-subtitle">{props.subtitle}</div>
-                    <div className="book-preview-body">
-                        {props.desc}
-                    </div>
+                    <div className="book-preview-body">{props.desc_1}</div>
+                    <div className="book-preview-body">{props.desc_2}</div>
+                    <div className="book-preview-body">{props.desc_3}</div>
                     {/* <div className="preview-link">
                         <Link to={{pathname: `/${props.link}`}}> <p>Read More</p> </Link>
                     </div> */}
@@ -48,9 +48,9 @@ function BookPreview(props) {
                 <div className="book-preview-container-right">
                     <div className="book-preview-title" onClick={(e) => {history.push(props.link);}}>{props.title}</div>
                     <div className="book-preview-subtitle">{props.subtitle}</div>
-                    <div className="book-preview-body">
-                        {props.desc}
-                    </div>
+                    <div className="book-preview-body">{props.desc_1}</div>
+                    <div className="book-preview-body">{props.desc_2}</div>
+                    <div className="book-preview-body">{props.desc_3}</div>
                     {/* <div className="preview-link">
                     <Link to={{pathname: `/${props.link}`}}> <p>Read More</p> </Link>
                     </div> */}

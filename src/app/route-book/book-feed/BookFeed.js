@@ -13,7 +13,9 @@ function BookFeed(props) {
                     <React.Fragment key={index}>
                         <BookPreview 
                             title={article.title} 
-                            desc={article.desc} 
+                            desc_1={article.desc_1}
+                            desc_2={article.desc_2} 
+                            desc_3={article.desc_3} 
                             img_src={article.img_src}
                             subtitle={article.subtitle}
                             img_info={article.img_info}
@@ -25,7 +27,9 @@ function BookFeed(props) {
                 return (
                     <BookPreview 
                         title={article.title} 
-                        desc={article.desc} 
+                        desc_1={article.desc_1}
+                        desc_2={article.desc_2} 
+                        desc_3={article.desc_3} 
                         img_src={article.img_src} 
                         key={index} 
                         subtitle={article.subtitle}
@@ -42,7 +46,7 @@ function BookFeed(props) {
             <GoHome />
             <div className="book-intro-container">
                 <div className="book-intro-title">WAYR?</div>
-                <div className="book-intro-body">I mainly read comic books, tech books, and non-fiction but I've been known to dabble around.</div>
+                <div className="book-intro-body">You'll be seeing a lot of comic books, tech books/white papers, and non-fictions but you never really know what we'll get into. Sometimes you gotta let the bookstore decide ¯\_(ツ)_/¯</div>
             </div>
             {feed()}
         </div>

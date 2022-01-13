@@ -7,17 +7,18 @@
     height: calc(100% - 10px);
     overflow: auto;
     box-sizing: border-box;
+    font-family: "Baloo Thambi 2", cursive;
+    font-weight: 500;
     // background: #efeff0;
     .book-intro-container {
         display: block;
         width: 100%;
         float: left;
-        font-family: "Inter", sans-serif;
         padding-bottom: 15px;
         .book-intro-title {
             padding: 5px;
             padding-bottom: 15px;
-            font-size: 26px;
+            font-size: 30px;
             text-align: center;
             text-decoration: underline;
             text-decoration-thickness: 2px;
