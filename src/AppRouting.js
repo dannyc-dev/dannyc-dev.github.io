@@ -23,7 +23,7 @@ function AppRouting(props) {
             <Route exact path="/battle-arena" element={<Blog {...props} /> }/>
             <Route path="*" element={<NotFound />}/>
 
-        </Routes> 
+        </Routes>
     )
 }
 
