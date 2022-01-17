@@ -66,7 +66,7 @@ function Barena(props) {
             </div>
             <div className="blog-sub-header">Tooling Specs:</div>
             <div className="blog-center" >
-                Visual Studio 2022: <br />
+                Visual Studio 2022:<br />
             </div>
         </div>
     )
