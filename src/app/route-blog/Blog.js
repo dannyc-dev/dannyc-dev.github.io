@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Logo from '../core/logo/Logo';
 import { CSSTransition } from 'react-transition-group';
+import { useLocation } from "react-router-dom";
 import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
 import { useMediaQuery } from 'react-responsive';
@@ -18,7 +19,8 @@ let MAP ={
 }
 
 function Blog(props) {
-    let Target = MAP[props.location.pathname];
+    let location = useLocation();
+    let Target = MAP[location.pathname];
     const [menuToggle, setMenuToggle] = useState(false);
 
     function handleToggle(newValue) {

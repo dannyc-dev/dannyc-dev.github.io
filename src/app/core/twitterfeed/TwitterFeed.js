@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation, useHistory } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { ReactComponent as InfoIcon } from '../../../assets/superhero.svg';
 import { ReactComponent as BlogIcon } from '../../../assets/content.svg';
 import { ReactComponent as BooksIcon } from '../../../assets/books.svg';
@@ -9,7 +9,7 @@ import  SwipeUp from '../../../assets/arrows.png';
 import './TwitterFeed.scss';
 
 function TwitterFeed(props) {
-    let history = useHistory();
+    let navigate = useNavigate();
     const location = useLocation();
     // const [showHome, setShowHome] = useState(false);
     const [touchStartY, setTouchStartY] = useState(0);
@@ -39,11 +39,9 @@ function TwitterFeed(props) {
         props.closeMenu(props.menu);
     }
 
-    const redirect = (route) => { 
-        if ((route === "home") && (location.pathname === "/")) {
-            props.closeMenu(props.menu);
-        } else if (location.pathname !== '/' + route) {
-            history.push(route);
+    const redirect = (route) => {
+        if (location.pathname !== route) {
+            navigate(route);
         } else {
             props.closeMenu(props.menu);
         }
@@ -59,19 +57,19 @@ function TwitterFeed(props) {
                 <CloseIcon className="close-icon" onClick={(e) => {close_menu(e)}}/>
             </div>
             <div className="menu-container">
-                <div className="menu-item" onClick={(e) => {redirect('home');}}>
+                <div className="menu-item" onClick={(e) => {redirect('/');}}>
                     <HomeIcon className="home"/>
                     <div className="about">Home</div>
                 </div>
-                <div className="menu-item" onClick={() => {redirect('about')}}>
+                <div className="menu-item" onClick={() => {redirect('/about')}}>
                     <InfoIcon className="info"/>
                     <div className="about">About</div>
                 </div>
-                <div className="menu-item" onClick={(e) => {redirect('blogs');}}>
+                <div className="menu-item" onClick={(e) => {redirect('/blogs');}}>
                     <BlogIcon className="blog"/>
                     <div className="about">Blog</div>
                 </div>
-                <div className="menu-item" onClick={() => {redirect('books')}}>
+                <div className="menu-item" onClick={() => {redirect('/books')}}>
                     <BooksIcon className="books"/>
                     <div className="about">Books</div>
                 </div>

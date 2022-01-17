@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'; 
-import { useLocation, useHistory } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import './Logo.scss';
 
 function Logo(props) {
     const location = useLocation();
-    const history = useHistory();
+    const navigate = useNavigate();
     let class_name = 'logo-static';
     const handleOnSubmit = () => {
-        history.push(`/home`);
+        navigate(`/`);
     };
 
     if (location.pathname === '/') {

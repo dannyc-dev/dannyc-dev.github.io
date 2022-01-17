@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 // import { Link } from 'react-router-dom';
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive';
 import { CSSTransition } from 'react-transition-group';
 import './BookPreview.scss';
 import { ImageInfoSmall } from '../../core/imageinfo/ImageInfo';
 
 function BookPreview(props) {
-    let history = useHistory();
+    let navigate = useNavigate();
     const [animate, setAnimate] = useState(false);
     useEffect(() => {
         setAnimate(true);
@@ -40,13 +40,13 @@ function BookPreview(props) {
             </>}
             {!isMobileDevice && <>
                 <div className="book-preview-container-left">
-                    <img alt="Not Found" src={`${props.img_src}`} onClick={(e) => {history.push(props.link);}}/>
+                    <img alt="Not Found" src={`${props.img_src}`} onClick={(e) => {navigate(props.link);}}/>
                         {props.img_info &&
                             <ImageInfoSmall info={props.img_info} />
                         }
                 </div>
                 <div className="book-preview-container-right">
-                    <div className="book-preview-title" onClick={(e) => {history.push(props.link);}}>{props.title}</div>
+                    <div className="book-preview-title" onClick={(e) => {navigate(props.link);}}>{props.title}</div>
                     <div className="book-preview-subtitle">{props.subtitle}</div>
                     <div className="book-preview-body">{props.desc_1}</div>
                     <div className="book-preview-body">{props.desc_2}</div>

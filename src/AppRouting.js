@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, withRouter, Redirect } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./app/route-home/Home";
 import About from "./app/route-about/About";
 import Blog from "./app/route-blog/Blog";
@@ -9,24 +9,22 @@ import NotFound from "./app/core/notfound/NotFound";
 
 function AppRouting(props) {
     return (
-        <Switch>  
-            <Route exact path="/home">
-                <Redirect to="/" />
-            </Route>
-            <Route exact path="/" render={() => <Home />}/>
-            <Route exact path="/about" render={() => <About />}/>
-            <Route exact path="/books" render={() => <Book />}/>
-            <Route exact path="/blogs" render={() => <Blogs />}/>
+        <Routes>  
+            {/* <Route exact path="home" render={() => <Redirect to="/" />} /> */}
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/books" element={<Book />} />
+            <Route exact path="/blogs" element={<Blogs />} />
             {/* Add custom path for new posts
             * Ex.
-            *  <Route exact path="/example" render={(props) => <Blog {...props} />}/>
+            *  <Route exact path="/example-route" element={<Blog {...props} /> } />
             */}
-            <Route exact path="/battle-arena-2" render={(props) => <Blog {...props}/>}/>
-            <Route exact path="/battle-arena" render={(props) => <Blog {...props}/>}/>
+            <Route exact path="/battle-arena-2" element={<Blog {...props} /> } />
+            <Route exact path="/battle-arena" element={<Blog {...props} /> }/>
+            <Route path="*" element={<NotFound />}/>
 
-            <Route component={NotFound} status={404}/>
-        </Switch> 
+        </Routes> 
     )
 }
 
-export const AppRouter = withRouter(AppRouting);
+export const AppRouter = AppRouting;
