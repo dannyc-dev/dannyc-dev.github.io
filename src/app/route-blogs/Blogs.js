@@ -22,7 +22,7 @@ function Blogs(props) {
             {isMobileDevice &&
                 <div className="mobile-header no-scroll">
                     <Logo />
-                    <Socials toggle={menuToggle} onChange={handleToggle}/>
+                    <Socials toggle={menuToggle} isMobile={isMobileDevice} onChange={handleToggle}/>
                     <CSSTransition
                         in={menuToggle}
                         timeout={300}

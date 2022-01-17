@@ -1,5 +1,5 @@
 .blog-preview-container {
-    padding: 20px 20px 20px 10px;
+    padding: 20px 20px 20px 5px;
     background: white;
     border-radius: 5px;
     min-height: 175px;
@@ -10,7 +10,7 @@
         position: relative;
         float: left;
         width: calc(60% - 20px);
-        padding: 5px;
+        padding: 0px 10px 10px 10px;
         .blog-preview-title {
             font-size: 30px;
             padding-bottom: 10px;
@@ -42,7 +42,7 @@
 }
 
 .first {
-    padding-top: 5px;
+    padding-top: 0px;
 }
 
 @media screen and (max-width: 480px) {

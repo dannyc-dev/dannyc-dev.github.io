@@ -10,9 +10,9 @@ export const PREVIEW_FEED = [
      * 'exclude': 'Exclude from Home page - Defaults to showing on home page'
      */
      {
-        'title': 'Coming Soon!',
-        'subtitle': 'Something something DirectX simulations',
-        'desc': `I've been working on building 3D simulations with DirectX. Expect this one to be heavy on samples of code and less of a walkthrough.`,
+        'title': 'Coming Soon! DirectX Simulations',
+        'subtitle': 'Something about making DirectX simulations',
+        'desc': `I've been working on building 3D simulations with DirectX and want to share some of it. Expect this one to be heavy on samples of code and less of a walkthrough.`,
         'img_src': 'placeholder.jpeg',
         'link': 'battle-arena-2',
         'img_info': null,
