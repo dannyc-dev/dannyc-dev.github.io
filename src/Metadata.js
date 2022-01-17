@@ -19,9 +19,9 @@ export const PREVIEW_FEED = [
         'exlcude': true
     },
     {
-        'title': 'Lorem ipsum dolor sit amet.',
-        'subtitle': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel.',
-        'desc':  `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed mauris ultricies, tempor nisl vel, tincidunt ante. Etiam suscipit nisi id faucibus maximus. Nulla porta diam leo, eu bibendum nulla vestibulum ut. Maecenas in bibendum neque. Etiam venenatis leo ut odio porttitor, vel sollicitudin est tincidunt. Suspendisse facilisis justo sit.`,
+        'title': 'RPM +/- WPM',
+        'subtitle': 'Creating an external trainer to read and write to process memory',
+        'desc':  `The basics of reading and writing to process memory. Building out a command line RNG battle game and exploring different ways to read and write to it externally. Scan for byte patterns, reverse player structures, and rpm/wpm our way ahead of the competition in the arena. `,
         'img_src': 'memory_preview.png',
         'link': 'battle-arena',
         'img_info': 'This is a snapshot of the graphical memory viewer of the Battle Arena Game by Cheat Engine.',

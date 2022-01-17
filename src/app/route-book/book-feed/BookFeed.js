@@ -45,7 +45,7 @@ function BookFeed(props) {
         <div className={'book-container'}>
             <GoHome />
             <div className="book-intro-container">
-                <div className="book-intro-title">WAYR?</div>
+                <div className="book-intro-title">What are you reading?</div>
                 <div className="book-intro-body">You'll be seeing a lot of comic books, tech books/white papers, and non-fictions but you never really know what we'll get into. Sometimes you gotta let the bookstore decide ¯\_(ツ)_/¯</div>
             </div>
             {feed()}

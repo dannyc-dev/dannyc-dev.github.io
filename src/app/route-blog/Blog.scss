@@ -50,12 +50,13 @@
         font-family: 'Baloo Tammudu 2', cursive;
         .blog-p {
             display: block;
-            width: 100%;
+            width: 95%;
             height: auto;
             position: relative;
             margin: auto;
             box-sizing: border-box;
-            padding-left: 10px;
+            padding: 0px 60px 30px 60px;
+            font-size: 20px;
         }
         .blog-image-container {
             display: block;
@@ -71,12 +72,28 @@
                 display: block;
                 height: auto;
                 margin: auto;
-                width: 90%;
+                width: 80%;
             }
         }
         .blog-title {
-            font-size: 26px;
-            padding-left: 10px;
+            font-size: 32px;
+            text-align: center;
+        }
+        .audio-container {
+            width: 100%;
+            position: relative; 
+            display: block;
+            audio {
+                display: block;
+                position: relative;
+                margin: auto;
+                padding: 10px;
+            }
+            .audio-footer {
+                display: block;
+                text-align: center;
+
+            }
         }
         .blog-header-container {
             display: block;
@@ -92,8 +109,15 @@
                 display: block;
                 height: auto;
                 margin: auto;
-                width: 100%;
+                width: 95%;
             }
+        }
+        .blog-sub-header {
+            font-size: 24px;
+            text-align: center;
+        }
+        .blog-center {
+            text-align: center;
         }
     }
     .mobile-header {
@@ -121,19 +145,28 @@
             overscroll-behavior: none;
             .blog-header-container {
                 padding: 0px;
+                .blog-header {
+                    width: 100%;
+                }
             }
             .blog-title {
                 padding-left: 0px;
                 font-size: 20px;
+                padding-top: 10px;
             }
             .blog-p {
-                padding-left: 0px;
+                padding: 0px;
+                font-size: 14px;
             }
             .blog-image-container {
                 padding: 0px;
                 .blog-image-l {
                     width: 100%;
                 }
+            }
+            .blog-sub-header {
+                padding-left: 0px;
+                font-size: 18px;
             }
         }
         .mobile-header {
