@@ -4,7 +4,7 @@ import { CSSTransition } from 'react-transition-group';
 import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
 import AboutPreview from './about-preview/AboutPreview';
-import GoHome from '../core/gohome/GoHome';
+import GoBack from '../core/goback/GoBack';
 import { useMediaQuery } from 'react-responsive';
 import './About.scss';
 
@@ -45,7 +45,7 @@ function About(props) {
                 {!menuToggle && <span className="footer" role="img" aria-label="heart">Made with ❤️ by <a target="_blank" rel="noopener noreferrer" href="https://github.com/dannyc-dev/dannyc-dev.github.io">dannyc</a></span>}
             </div>       
             <div className="about-feed">
-                <GoHome />
+                <GoBack />
                 <AboutPreview />
             </div>
         </div>

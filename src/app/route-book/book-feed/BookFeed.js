@@ -1,7 +1,7 @@
 import React from 'react';
 import BookPreview from '../book-preview/BookPreview';
 import {BOOK_FEED} from '../../../BookMetadata';
-import GoHome from '../../core/gohome/GoHome';
+import GoBack from '../../core/goback/GoBack';
 import './BookFeed.scss';
 
 function BookFeed(props) {
@@ -43,10 +43,10 @@ function BookFeed(props) {
     
     return (
         <div className={'book-container'}>
-            <GoHome />
+            <GoBack />
             <div className="book-intro-container">
                 <div className="book-intro-title">What are you reading?</div>
-                <div className="book-intro-body">You'll be seeing a lot of comic books, tech books/white papers, and non-fictions but you never really know what we'll get into. Sometimes you gotta let the bookstore decide ¯\_(ツ)_/¯</div>
+                <div className="book-intro-body">You'll be seeing a lot of comic books, tech books/white papers, and non-fictions but you never really know what we'll get into. Sometimes you let the bookstore decide ¯\_(ツ)_/¯</div>
             </div>
             {feed()}
         </div>

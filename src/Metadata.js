@@ -7,12 +7,12 @@ export const PREVIEW_FEED = [
      * 'img_src': 'Image preview filename *IMPORTANT* Must be found inside the src/app/route-home/feed-preview/assets/ directory'
      * 'link': 'React router link'
      * 'img_info': '[Optional] Image preview info'
-     * 'exclude': 'Exclude from Blogs - Defaults to showing on blog page'
+     * 'exclude': 'Exclude from Home page - Defaults to showing on home page'
      */
      {
-        'title': 'Lorem ipsum dolor sit amet.',
-        'subtitle': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel.',
-        'desc': `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed mauris ultricies, tempor nisl vel, tincidunt ante. Etiam suscipit nisi id faucibus maximus. Nulla porta diam leo, eu bibendum nulla vestibulum ut. Maecenas in bibendum neque. Etiam venenatis leo ut odio porttitor, vel sollicitudin est tincidunt. Suspendisse facilisis justo sit.`,
+        'title': 'Coming Soon!',
+        'subtitle': 'Something something DirectX simulations',
+        'desc': `I've been working on building 3D simulations with DirectX. Expect this one to be heavy on samples of code and less of a walkthrough.`,
         'img_src': 'placeholder.jpeg',
         'link': 'battle-arena-2',
         'img_info': null,

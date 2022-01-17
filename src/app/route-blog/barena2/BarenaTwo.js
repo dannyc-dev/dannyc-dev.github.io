@@ -1,12 +1,12 @@
 import React from 'react';
 import Construction from '../../core/construction/Construction';
-import GoHome from '../../core/gohome/GoHome';
+import GoBack from '../../core/goback/GoBack';
 import './BarenaTwo.scss';
 
 function BarenaTwo(props) {
     return (
         <div className="blog-body">
-            <GoHome />
+            <GoBack />
             <Construction />
         </div>
     );

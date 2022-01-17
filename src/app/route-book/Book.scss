@@ -5,6 +5,23 @@
     width: 100%;
     box-sizing: border-box;
     font-family: 'Baloo Tammudu 2', cursive;
+    .alert-enter {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    .alert-enter-active {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: opacity 300ms, transform 300ms;
+    }
+    .alert-exit {
+        opacity: 1;
+    }
+    .alert-exit-active {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: opacity 300ms, transform 300ms;
+    }
     .highlight {
         float: left;
         width: 10%;

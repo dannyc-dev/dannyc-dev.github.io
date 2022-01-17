@@ -8,33 +8,37 @@ function Feed(props) {
     const feed = () => {
         return PREVIEW_FEED.map((article, index) => {
             if (index !== PREVIEW_FEED.length - 1) {
-                return (
-                    <React.Fragment key={index}>
+                if (!article.exlcude) { 
+                    return (
+                        <React.Fragment key={index}>
+                            <Preview 
+                                title={article.title} 
+                                desc={article.desc} 
+                                img_src={article.img_src}
+                                link={article.link} 
+                                subtitle={article.subtitle}
+                                img_info={article.img_info}
+                            />
+                            <div className="divider"></div>
+                        </React.Fragment>
+                    )
+                }
+            } else {
+                if (!article.exlcude) { 
+                    return (
                         <Preview 
                             title={article.title} 
                             desc={article.desc} 
-                            img_src={article.img_src}
+                            img_src={article.img_src} 
+                            key={index} 
                             link={article.link} 
                             subtitle={article.subtitle}
                             img_info={article.img_info}
-                         />
-                        <div className="divider"></div>
-                    </React.Fragment>
-                )
-            } else {
-                return (
-                    <Preview 
-                        title={article.title} 
-                        desc={article.desc} 
-                        img_src={article.img_src} 
-                        key={index} 
-                        link={article.link} 
-                        subtitle={article.subtitle}
-                        img_info={article.img_info}
-                    />
-                )
+                        />
+                    )
+                }
             }
-            
+            return null;
         })
     }
     

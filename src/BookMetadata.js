@@ -10,7 +10,7 @@ export const BOOK_FEED = [
      */
      {
         'title': 'Locke & Key, Vol. 1',
-        'subtitle': 'Joe Hill, Gabriel Rodríguez',
+        'subtitle': 'Written by: Joe Hill, Illustrated by: Gabriel Rodríguez',
         'desc_1': `🪄🪄🪄🪄🪄`,
         'desc_2': `🧟‍♀️🧟‍♀️🧟‍♀️🧟‍♀️`,
         'desc_3': `🗝🗝🗝🗝🗝`,
@@ -19,7 +19,7 @@ export const BOOK_FEED = [
     },
     {
         'title': '20th Century Boys',
-        'subtitle': 'Naoki Urasawa',
+        'subtitle': 'Written by: Naoki Urasawa',
         'desc_1': `👁👁👁👁`,
         'desc_2': `🏃‍♂️🏃‍♂️🏃‍♂️`,
         'desc_3': `🐸🐸🐸🐸🐸`,

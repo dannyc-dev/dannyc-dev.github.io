@@ -6,9 +6,6 @@
     font-family: 'Baloo Thambi 2', cursive;
     font-weight: 500;
     overflow: hidden;
-    &:last-child {
-        border-bottom: none;
-    }
     .blog-preview-container-left {
         position: relative;
         float: left;
@@ -44,27 +41,9 @@
     }
 }
 
-// .fade-enter {
-//     opacity: 0;
-// }
-  
-// .fade-enter-active {
-//     opacity: 1;
-//     // transition: opacity 1000ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
-//     transform: translateX(0px);
-//     transition: opacity 800ms, transform 400ms;
-// }
-  
-// .fade-exit {
-//     opacity: 1;
-// }
-  
-// .fade-exit-active {
-//     opacity: 1;
-//     // transition: opacity 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-//     transform: translateX(0px);
-//     transition: opacity 800ms, transform 400ms;
-// }
+.first {
+    padding-top: 5px;
+}
 
 @media screen and (max-width: 480px) {
     .blog-preview-container {
