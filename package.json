@@ -16,7 +16,7 @@
     "sass": "^1.45.1",
     "web-vitals": "^0.2.4"
   },
-  "resolutions": {
+  "overrides": {
     "mini-css-extract-plugin": "2.4.5"
   },
   "scripts": {
