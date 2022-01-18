@@ -7,6 +7,8 @@
     font-weight: 500;
     overflow: hidden;
     box-sizing: border-box;
+    width: 80%;
+    margin: auto;
     &:last-child {
         border-bottom: none;
     }
@@ -67,6 +69,8 @@
     .book-preview-container {
         overflow: hidden;
         box-sizing: border-box;
+        width: 100%;
+        margin: auto;
         .book-preview-container-top {
             display: block;
             position: relative;

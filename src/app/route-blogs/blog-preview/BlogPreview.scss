@@ -1,16 +1,18 @@
 .blog-preview-container {
-    padding: 20px 20px 20px 5px;
+    padding: 20px 20px 20px 10px;
     background: white;
     border-radius: 5px;
     min-height: 175px;
     font-family: 'Baloo Thambi 2', cursive;
     font-weight: 500;
     overflow: hidden;
+    width: 95%;
+    margin: auto;
     .blog-preview-container-left {
         position: relative;
         float: left;
         width: calc(60% - 20px);
-        padding: 0px 10px 10px 10px;
+        padding: 10px;
         .blog-preview-title {
             font-size: 30px;
             padding-bottom: 10px;
