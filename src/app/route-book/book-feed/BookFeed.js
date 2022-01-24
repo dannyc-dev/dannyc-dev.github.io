@@ -20,7 +20,7 @@ function BookFeed(props) {
                             subtitle={article.subtitle}
                             img_info={article.img_info}
                          />
-                        <div className="divider"></div>
+                        <div className="book-divider"></div>
                     </React.Fragment>
                 )
             } else {

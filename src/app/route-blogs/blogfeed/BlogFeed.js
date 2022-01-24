@@ -20,7 +20,7 @@ function BlogFeed(props) {
                             img_info={article.img_info}
                             first_index={`${index === 0 ? "first" : null}`}
                             />
-                        <div className="divider"></div>
+                        <div className="blogs-divider"></div>
                     </React.Fragment>
                 )
             } else {

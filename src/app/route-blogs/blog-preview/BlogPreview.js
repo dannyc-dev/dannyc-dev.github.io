@@ -26,7 +26,7 @@ function BlogPreview(props) {
         <div className={`blog-preview-container ${props.first_index}`}>
             {isMobileDevice && <>
                 <div className="blog-preview-container-top">
-                    <img alt="Not Found" src={require(`./assets/${props.img_src}`)} onClick={(e) => {navigate('/' + props.link);}}/>
+                    <img alt="Not Found" src={props.img_src} onClick={(e) => {navigate('/' + props.link);}}/>
                 </div>
                 <div className="blog-preview-container-bot">
                     <div className="blog-preview-title" onClick={(e) => {navigate('/' + props.link);}}>{props.title}</div>
@@ -50,7 +50,7 @@ function BlogPreview(props) {
                     </div>
                 </div>
                 <div className="blog-preview-container-right">
-                    <img alt="Not Found" src={require(`./assets/${props.img_src}`)} onClick={(e) => {navigate('/' + props.link);}}/>
+                    <img alt="Not Found" src={props.img_src} onClick={(e) => {navigate('/' + props.link);}}/>
                     {props.img_info &&
                         <ImageInfoSmall info={props.img_info} />
                     }
