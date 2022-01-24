@@ -22,7 +22,7 @@ export const PREVIEW_FEED = [
         'title': 'DirectX 3D Simulations',
         'subtitle': 'Building 3D simulations with DirectXTK',
         'desc': `Sharing a template for building 3D simulations with DirectX Toolkit. I wanted to share this starter template that I've used to build out some interesting 3D simulations. It uses a collection of helper classes for writing Direct3D 11 C++ code utilizing the DirectX Toolkit from Microsoft.`,
-        'img_src': 'https://dannyc-assets.s3.amazonaws.com/d3d-sim/car-small.gif',
+        'img_src': 'https://dannyc-assets.s3.amazonaws.com/d3d-sim/planet-small.gif',
         'link': 'battle-arena-2',
         'img_info': null
     },
