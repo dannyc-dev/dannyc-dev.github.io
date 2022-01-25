@@ -18,8 +18,7 @@ function AppRouting(props) {
             * Ex.
             *  <Route exact path="/example-route" element={<Blog {...props} /> } />
             */}
-            <Route exact path="/battle-arena-2" element={<Blog {...props} /> } />
-            <Route exact path="/battle-arena" element={<Blog {...props} /> }/>
+            <Route exact path="/blogs/:blogId" element={<Blog {...props} /> } />
             <Route path="*" element={<NotFound />}/>
 
         </Routes>

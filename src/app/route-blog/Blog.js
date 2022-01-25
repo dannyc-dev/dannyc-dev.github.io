@@ -1,26 +1,28 @@
 import React, {useState} from 'react';
 import Logo from '../core/logo/Logo';
 import { CSSTransition } from 'react-transition-group';
-import { useLocation } from "react-router-dom";
 import TwitterFeed from '../core/twitterfeed/TwitterFeed';
 import Socials from '../core/socials/Socials';
 import { useMediaQuery } from 'react-responsive';
+import { useParams } from "react-router-dom";
 
 // Import componenets
-import BarenaTwo from './barena2/BarenaTwo';
+import Pong from './pong-sfml/Pong';
 import Barena from './barena/Barena';
+import D3D from './d3d-template/D3D';
 
 import './Blog.scss';
 
 // Map components
 let MAP ={
-    '/battle-arena-2': BarenaTwo,
-    '/battle-arena': Barena,
+    'pong-sfml': Pong,
+    'battle-arena': Barena,
+    'd3d-template': D3D,
 }
 
 function Blog(props) {
-    let location = useLocation();
-    let Target = MAP[location.pathname];
+    let params = useParams();
+    let Target = MAP[params.blogId];
     const [menuToggle, setMenuToggle] = useState(false);
 
     function handleToggle(newValue) {

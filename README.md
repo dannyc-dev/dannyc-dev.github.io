@@ -8,9 +8,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 #### Adding an entry
 
 1. Create entry Metadata.js
-2. Create  `src/app/route-blogs` component
-3. Link component `src/app/route-blogs/Blog.js` MAP
-3. Link/Add component AppRouting.js
+2. Create  `src/app/route-blog` component
+3. Link component `src/app/route-blog/Blog.js` MAP
+
+#### Adding book
+1. Create entry BookMetadata.js
 
 ## Available Scripts
 

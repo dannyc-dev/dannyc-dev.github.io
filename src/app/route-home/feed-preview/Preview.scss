@@ -27,6 +27,16 @@
             font-size: 18px;
             padding-bottom: 10px;
         }
+        .preview-link {
+            .blog-link-text {
+                display: inline-block;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-thickness: 1px;
+                }
+            }
+        }
     }
     .preview-container-right {
         position: relative;

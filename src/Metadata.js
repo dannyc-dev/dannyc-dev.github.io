@@ -4,7 +4,7 @@ export const PREVIEW_FEED = [
      * 'title': 'post title'
      * 'subtitle': 'post subtitle'
      * 'desc': 'post description -- around 50-100 words describing post'
-     * 'img_src': 'Image preview filename *IMPORTANT* Must be found inside the src/app/route-home/feed-preview/assets/ directory'
+     * 'img_src': 'Image preview filename - remote'
      * 'link': 'React router link'
      * 'img_info': '[Optional] Image preview info'
      * 'exclude': 'Exclude from Home page - Defaults to showing on home page'
@@ -14,7 +14,7 @@ export const PREVIEW_FEED = [
         'subtitle': 'Remaking the classic pong game with SFML',
         'desc': `Building the classic Pong game with the Simple and Fast Multimedia Library.`,
         'img_src': 'https://dannyc-assets.s3.amazonaws.com/placeholder.jpeg',
-        'link': 'battle-arena-2',
+        'link': 'pong-sfml',
         'img_info': null,
         'exlcude': true
     },
@@ -23,7 +23,7 @@ export const PREVIEW_FEED = [
         'subtitle': 'Building 3D simulations with DirectXTK',
         'desc': `Sharing a template for building 3D simulations with DirectX Toolkit. I wanted to share this starter template that I've used to build out some interesting 3D simulations. It uses a collection of helper classes for writing Direct3D 11 C++ code utilizing the DirectX Toolkit from Microsoft.`,
         'img_src': 'https://dannyc-assets.s3.amazonaws.com/d3d-sim/planet-small.gif',
-        'link': 'battle-arena-2',
+        'link': 'd3d-template',
         'img_info': null
     },
     {

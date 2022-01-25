@@ -1,9 +1,9 @@
 import React from 'react';
 import Construction from '../../core/construction/Construction';
 import GoBack from '../../core/goback/GoBack';
-import './BarenaTwo.scss';
+import './Pong.scss';
 
-function BarenaTwo(props) {
+function Pong(props) {
     return (
         <div className="blog-body">
             <GoBack />
@@ -12,4 +12,4 @@ function BarenaTwo(props) {
     );
 }
 
-export default BarenaTwo;
+export default Pong;

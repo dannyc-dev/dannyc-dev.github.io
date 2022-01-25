@@ -5,7 +5,7 @@ export const BOOK_FEED = [
      * 'subtitle': 'book subtitle'
      * 'rank': 'book ranking'
      * 'desc': 'book description -- around 50-100 words describing book'
-     * 'img_src': 'Image preview filename *IMPORTANT* Must be found inside the src/app/route-book/book-preview/assets/ directory'
+     * 'img_src': 'Image preview filename - remote'
      * 'img_info': '[Optional] Image preview info'
      */
      {
