@@ -6,40 +6,40 @@
     position: relative;
     box-sizing: border-box;
 }
-ul {
-    display: flex;
-    overflow: auto;
-    scrollbar-width: none;
-    // justify-content: flex-end;
-    padding-inline-start: 0px;
-    width: 100%;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-ul::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
-ul li {
-    list-style: none;
-    // width: 30px;
-}
+// ul {
+//     display: flex;
+//     overflow: auto;
+//     scrollbar-width: none;
+//     // justify-content: flex-end;
+//     padding-inline-start: 0px;
+//     width: 100%;
+//     margin-block-start: 0px;
+//     margin-block-end: 0px;
+//     margin-inline-start: 0px;
+//     margin-inline-end: 0px;
+// }
+// ul::-webkit-scrollbar { 
+//     display: none;  /* Safari and Chrome */
+// }
+// ul li {
+//     list-style: none;
+//     // width: 30px;
+// }
 
-ul li a {
-    height: 65%;
-    min-height: 20px;
-    background-color: #fff;
-    display: block;
-    // border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #fff;
-}
+// ul li a {
+//     height: 65%;
+//     min-height: 20px;
+//     background-color: #fff;
+//     display: block;
+//     // border-radius: 50%;
+//     position: relative;
+//     overflow: hidden;
+//     border: 1px solid #fff;
+// }
 
-ul li div {
-    cursor: pointer;
-}
+// ul li div {
+//     cursor: pointer;
+// }
 
 .menu-anchor {
     height: 20px;
@@ -51,15 +51,15 @@ ul li div {
     cursor: pointer;
 }
 
-ul li a .icon {
-    position: relative;
-    padding: 3px 4px 3px 3px;
-    padding-top: 4px;
-    color: #fff;
-    transition: .5s;
-    z-index: 1;
-    height: 17px;
-}
+// ul li a .icon {
+//     position: relative;
+//     padding: 3px 4px 3px 3px;
+//     padding-top: 4px;
+//     color: #fff;
+//     transition: .5s;
+//     z-index: 1;
+//     height: 17px;
+// }
 
 div .menu {
     position: relative;
@@ -69,10 +69,10 @@ div .menu {
     height: 18px;
 }
 
-ul li a:hover .icon {
-    color: #fff;
-    transform: rotateY(360deg);
-}
+// ul li a:hover .icon {
+//     color: #fff;
+//     transform: rotateY(360deg);
+// }
 
 // ul li div:hover .menu {
 //     color: #fff;
@@ -208,23 +208,23 @@ a:hover .twitch {
         .social-mobile-home {
             flex: 1;
         }
-        ul {
-            justify-content: flex-end;
-            margin-block-start: 0px;
-            margin-block-end: 0px;
-        }
+        // ul {
+        //     justify-content: flex-end;
+        //     margin-block-start: 0px;
+        //     margin-block-end: 0px;
+        // }
     
-        ul li a {
-            height: 60%;
-        }
+        // ul li a {
+        //     height: 60%;
+        // }
     
         div .menu {
             height: 25px;
         }
     
-        ul li a .icon {
-            height: 22px;
-        }
+        // ul li a .icon {
+        //     height: 22px;
+        // }
     
         a:hover .twitter{
             padding-top: 6px !important;

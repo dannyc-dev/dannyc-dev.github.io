@@ -28,7 +28,9 @@
         }
         .blog-preview-link {
             .blog-link-text {
+                display: inline-block;
                 cursor: pointer;
+                color: #0000EE;
                 &:hover {
                     text-decoration: underline;
                     text-decoration-thickness: 1px;
