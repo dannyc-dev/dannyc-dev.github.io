@@ -28,7 +28,7 @@
             padding-bottom: 10px;
         }
         .preview-link {
-            .blog-link-text {
+            .link-text {
                 display: inline-block;
                 color: #0000EE;
                 cursor: pointer;
@@ -105,6 +105,12 @@
             }
             .preview-body {
                 font-size: 15px;
+            }
+            .preview-link {
+                .link-text {
+                    display: inline-block;
+                    color: #0000EE;
+                }
             }
         }
     }

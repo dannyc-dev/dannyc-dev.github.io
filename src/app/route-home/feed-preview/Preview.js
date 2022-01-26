@@ -44,7 +44,7 @@ function Preview(props) {
                         {props.desc}
                     </div>
                     <div className="preview-link">
-                        <p className="blog-link-text" onClick={(e)=> {navigate(`/blogs/${props.link}`)}}>Read More</p>
+                        <p className="link-text" onClick={(e)=> {navigate(`/blogs/${props.link}`)}}>Read More</p>
                     </div>
                 </div>
                 <div className="preview-container-right">
