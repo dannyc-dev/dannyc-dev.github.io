@@ -88,7 +88,7 @@ function Barena(props) {
             </div>
             <div className='blog-sub-header'>Finding the player offsets</div>
             <div className='blog-p'>
-                The first thing I did was open the game file (found in the default build path <code> x64/Debug/battle_arena.exe</code> after you build the project) in IDA. The simple design of the game makes the reverse engineering process much simpler. In the main function, we see a call for loading the effective address of the player (and enemy) that IDA resolves for us. The snippet of the interesting bits of disassembly in IDA can be found below as well as my annotated version:
+                The first thing I did was open the game file (found in the default build path <code> x64/Debug/battle_arena.exe</code> after you build the project) in IDA. The simple design of the game makes the reverse engineering process much simpler. In the main function, we see a call for loading the effective address of the player (and enemy) that IDA resolves for us. The snippets of interesting disassembly bits can be found below as well as the disassembly from IDA which has the full context:
                 <div className="code-editor">
                     <div className="tabs">
                     <div className="title -blue"><i className="icon"></i>main - disassembly</div>
