@@ -10,13 +10,13 @@ export const PREVIEW_FEED = [
      * 'exclude': 'Exclude from Home page - Defaults to showing on home page'
      */
      {
-        'title': 'Coming Soon! Pong!!!',
-        'subtitle': 'Remaking the classic pong game with SFML',
-        'desc': `Experimenting with different multimedia libraries, this time we're remaking the classic Pong game utilizing the Simple and Fast Multimedia Library for the heavy lifting!`,
+        'title': 'Game Jam - City Sim',
+        'subtitle': 'Building a game in Unreal Engine 4',
+        'desc': ``,
         'img_src': 'https://dannyc-assets.s3.amazonaws.com/placeholder.jpeg',
         'link': 'pong-sfml',
         'img_info': null,
-        'exlcude': true
+        // 'exlcude': true
     },
     {
         'title': 'DirectX 3D Simulations',
