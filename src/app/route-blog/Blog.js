@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useParams } from "react-router-dom";
 
 // Import componenets
-import Pong from './pong-sfml/Pong';
+import AlleyCat from './alley-cat/AlleyCat';
 import Barena from './barena/Barena';
 import D3D from './d3d-template/D3D';
 
@@ -15,7 +15,7 @@ import './Blog.scss';
 
 // Map components
 let MAP ={
-    'pong-sfml': Pong,
+    'alley-cat': AlleyCat,
     'battle-arena': Barena,
     'd3d-template': D3D,
 }

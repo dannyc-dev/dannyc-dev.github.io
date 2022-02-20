@@ -10,11 +10,11 @@ export const PREVIEW_FEED = [
      * 'exclude': 'Exclude from Home page - Defaults to showing on home page'
      */
      {
-        'title': 'Game Jam - City Sim',
+        'title': 'Game Jam - Alley Cat Sim',
         'subtitle': 'Building a game in Unreal Engine 4',
-        'desc': ``,
+        'desc': `My first unreal engine project, a city based alley cat exploration game (more of a prototype in terms of playable content). I used this project to learn my way around Unreal Engine 4 - just in time for a new version to be released. Read more about the gameplay and game design, watch some sample gameplay, and download the sample inside.`,
         'img_src': 'https://dannyc-assets.s3.amazonaws.com/placeholder.jpeg',
-        'link': 'pong-sfml',
+        'link': 'alley-cat',
         'img_info': null,
         // 'exlcude': true
     },

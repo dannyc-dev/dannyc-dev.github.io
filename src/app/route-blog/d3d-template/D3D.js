@@ -10,8 +10,8 @@ function D3D(props) {
     }, [])
     return (
         <div className="blog-body">
-                <div className="blog-p">
-                    <GoBack />
+                <GoBack />
+                <div className="blog-p"> 
                     <CSSTransition
                             in={animate}
                             timeout={300}

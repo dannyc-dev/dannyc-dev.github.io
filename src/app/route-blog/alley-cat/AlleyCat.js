@@ -1,9 +1,9 @@
 import React from 'react';
 import Construction from '../../core/construction/Construction';
 import GoBack from '../../core/goback/GoBack';
-import './Pong.scss';
+import './AlleyCat.scss';
 
-function Pong(props) {
+function AlleyCat(props) {
     return (
         <div className="blog-body">
             <GoBack />
@@ -12,4 +12,4 @@ function Pong(props) {
     );
 }
 
-export default Pong;
+export default AlleyCat;
