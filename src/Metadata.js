@@ -4,17 +4,17 @@ export const PREVIEW_FEED = [
      * 'title': 'post title'
      * 'subtitle': 'post subtitle'
      * 'desc': 'post description -- around 50-100 words describing post'
-     * 'img_src': 'Image preview filename - remote'
+     * 'img_src': 'Image preview filename - remote - https://dannyc-assets.s3.amazonaws.com/placeholder.jpeg'
      * 'link': 'React router link'
      * 'img_info': '[Optional] Image preview info'
      * 'exclude': 'Exclude from Home page - Defaults to showing on home page'
      */
      {
-        'title': 'Game Jam - Alley Cat Sim',
-        'subtitle': 'Building a game in Unreal Engine 4',
-        'desc': `My first unreal engine project, a city based alley cat exploration game (more of a prototype in terms of playable content). I used this project to learn my way around Unreal Engine 4 - just in time for a new version to be released. Read more about the gameplay and game design, watch some sample gameplay, and download the sample inside.`,
+        'title': 'Game Jam - Nine Lives',
+        'subtitle': 'The building of Nine Lives - a level exploration game',
+        'desc': `This unreal engine project is a prototype to an open world cat exploration game (open world is a bit of a stretch but we can pretend). I used this project to learn my way around Unreal Engine 4 - just in time for a new version to be released. Read more about the gameplay and game design, watch some sample gameplay, and download it here.`,
         'img_src': 'https://dannyc-assets.s3.amazonaws.com/placeholder.jpeg',
-        'link': 'alley-cat',
+        'link': 'nine-lives',
         'img_info': null,
         // 'exlcude': true
     },

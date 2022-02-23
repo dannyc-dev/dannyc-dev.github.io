@@ -11,6 +11,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 2. Create  `src/app/route-blog` component
 3. Link component `src/app/route-blog/Blog.js` MAP
 
+#### Image Sizes:
+
+Previews - 450 x 250
+Post - 1000-1100 × 400-700-800
+
 #### Adding book
 1. Create entry BookMetadata.js
 

@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useParams } from "react-router-dom";
 
 // Import componenets
-import AlleyCat from './alley-cat/AlleyCat';
+import NineLives from './nine-lives/NineLives';
 import Barena from './barena/Barena';
 import D3D from './d3d-template/D3D';
 
@@ -15,7 +15,7 @@ import './Blog.scss';
 
 // Map components
 let MAP ={
-    'alley-cat': AlleyCat,
+    'nine-lives': NineLives,
     'battle-arena': Barena,
     'd3d-template': D3D,
 }
