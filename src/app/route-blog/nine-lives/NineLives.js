@@ -54,10 +54,20 @@ function NineLives(props) {
                 </div>
                 <div className="cast-header">Cleo</div>
                 <div className="blog-image-container">
-                    <ReactPlayer className="blog-image-l pad-bot" controls="true" height="100%" width="100%" url="https://dannyc-assets.s3.amazonaws.com/ninelives/cleo_preview.mp4"/>
+                    <ReactPlayer className="blog-image-l" controls="true" height="100%" width="100%" url="https://dannyc-assets.s3.amazonaws.com/ninelives/cleo_preview.mp4"/>
                 </div>
             </div>
-            
+            <div className="blog-sub-header">Creating life through a state machine?</div>
+            <div className="blog-p">
+                Giving the characters life was fairly simple. My characters state machine only holds a few different states (Idle, Running, Jumping, Sitting), but that was good enough for the kind of experience I was going for. Below you can see an example of the animation blending between the running and idle state which you can tap into by pressing the shift key and moving forward in game - that will increase the velocity of your characters movement and trigger the change in state.
+                <div className="blog-image-container">
+                    <ReactPlayer className="blog-image-l" controls="true" height="100%" width="100%" url="https://dannyc-assets.s3.amazonaws.com/ninelives/running.mp4"/>
+                </div>
+                Similarly below you can find a preview of the sitting state which can be triggered by pressing the C key on your keyboard in game (don't worry about remembering the keys, I'll have a key map at the bottom for all the key strokes supported in game)
+                <div className="blog-image-container">
+                    <ReactPlayer className="blog-image-l" controls="true" height="100%" width="100%" url="https://dannyc-assets.s3.amazonaws.com/ninelives/sitting.mp4"/>
+                </div>
+            </div>
 
         </div>
     );
