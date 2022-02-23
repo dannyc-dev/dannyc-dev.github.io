@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { CSSTransition } from 'react-transition-group';
 import GoBack from '../../core/goback/GoBack';
-import { ImageInfo } from '../../core/imageinfo/ImageInfo';
 import './NineLives.scss';
 
 function NineLives(props) {
