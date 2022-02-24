@@ -13,7 +13,7 @@ export const PREVIEW_FEED = [
         'title': 'Game Jam - Nine Lives',
         'subtitle': 'The building of Nine Lives - a level exploration game',
         'desc': `This unreal engine project is a prototype to an open world cat exploration game (open world is a bit of a stretch but we can pretend). I used this project to learn my way around Unreal Engine 4 - just in time for a new version to be released. Read more about the gameplay and game design, watch some sample gameplay, and download it here.`,
-        'img_src': 'https://dannyc-assets.s3.amazonaws.com/placeholder.jpeg',
+        'img_src': 'https://dannyc-assets.s3.amazonaws.com/ninelives/post_preview.gif',
         'link': 'nine-lives',
         'img_info': null,
         // 'exlcude': true
