@@ -68,7 +68,6 @@ function NineLives(props) {
                     <ReactPlayer className="blog-image-l" controls="true" height="100%" width="100%" url="https://dannyc-assets.s3.amazonaws.com/ninelives/sitting.mp4"/>
                 </div>
                 Let's dive into some gameplay!
-
             </div>
 
         </div>

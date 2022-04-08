@@ -1,26 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive';
-import { CSSTransition } from 'react-transition-group';
+// import { CSSTransition } from 'react-transition-group';
 import './Preview.scss';
 import { ImageInfoSmall } from '../../core/imageinfo/ImageInfo';
 
 function Preview(props) {
     let navigate = useNavigate();
-    const [animate, setAnimate] = useState(false);
+    // const [animate, setAnimate] = useState(false);
     useEffect(() => {
-        setAnimate(true);
+        // setAnimate(true);
     }, [])
     const isMobileDevice = useMediaQuery({
         query: '(max-device-width: 480px)'
     })
     return (
-        <CSSTransition
-            in={animate}
-            timeout={300}
-            classNames="fade"
-            unmountOnExit
-        >
+        // <CSSTransition
+        //     in={animate}
+        //     timeout={300}
+        //     classNames="fade"
+        //     unmountOnExit
+        // >
         <div className="preview-container">
             {isMobileDevice && <>
                 <div className="preview-container-top">
@@ -55,7 +55,7 @@ function Preview(props) {
                 </div>
             </>}
         </div>
-        </CSSTransition>
+        // </CSSTransition>
     )
 }
 
