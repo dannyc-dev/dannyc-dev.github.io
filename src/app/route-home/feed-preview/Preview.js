@@ -24,7 +24,7 @@ function Preview(props) {
         <div className="preview-container">
             {isMobileDevice && <>
                 <div className="preview-container-top">
-                    <img alt="Not Found" src={props.img_src} onClick={(e) => {navigate(`/blogs/${props.link}`)}}/>
+                    <img alt="Not Found" src={props.img_src} loading="eager" onClick={(e) => {navigate(`/blogs/${props.link}`)}}/>
                 </div>
                 <div className="preview-container-bot">
                     <div className="preview-title" onClick={(e) => {navigate(`/blogs/${props.link}`)}}>{props.title}</div>
@@ -48,7 +48,7 @@ function Preview(props) {
                     </div>
                 </div>
                 <div className="preview-container-right">
-                    <img alt="Not Found" src={props.img_src} onClick={(e) => {navigate(`/blogs/${props.link}`)}}/>
+                    <img alt="Not Found" src={props.img_src} loading="eager" onClick={(e) => {navigate(`/blogs/${props.link}`)}}/>
                     {props.img_info &&
                         <ImageInfoSmall info={props.img_info} />
                     }
